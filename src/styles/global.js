@@ -1,4 +1,6 @@
 import { injectGlobal } from 'emotion'
+import theme from 'styles/theme'
+import { color } from 'styles/helpers'
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700');
@@ -14,7 +16,8 @@ injectGlobal`
 
   body {
     font-family: 'Lato', sans-serif;
-    color: #333333;
+    color: red;
+    color: ${color('ltGdray', { theme })};
   }
 
   a {
