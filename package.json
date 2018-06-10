@@ -9,7 +9,8 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-emotion": "^9.2.3",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "recompose": "^0.27.1"
   },
   "scripts": {
     "start": "PORT=3002 react-app-rewired start",
