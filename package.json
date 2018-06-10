@@ -16,6 +16,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-plugin-emotion": "^9.2.0"
+    "babel-plugin-emotion": "^9.2.0",
+    "prettier": "^1.13.5"
   }
 }
