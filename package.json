@@ -19,5 +19,10 @@
     "babel-plugin-emotion": "^9.2.0",
     "prettier": "^1.13.5",
     "react-app-rewired": "^1.5.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true
   }
 }
