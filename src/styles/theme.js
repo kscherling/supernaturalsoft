@@ -22,6 +22,16 @@ const fontSize = {
   titleXl: '36px'
 }
 
+const lineHeight = {
+  bodySm: 1.5,
+  bodyMd: 1.5,
+  bodyLg: 1.5,
+  titleSm: 1.5,
+  titleMd: 1.5,
+  titleLg: 1.5,
+  titleXl: 1.5
+}
+
 const color = {
   white: '#ffffff',
   offWhite: '#f2f2f2',
@@ -35,5 +45,6 @@ export default {
   color,
   fontFamily,
   fontSize,
+  lineHeight,
   spacer
 }

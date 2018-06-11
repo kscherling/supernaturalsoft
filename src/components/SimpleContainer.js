@@ -19,6 +19,8 @@ const Flow = styled.div`
 
 const Respond = styled.div`
   width: 1000px;
+  display: grid;
+  grid-auto-flow: column;
 
   ${alignItems};
   ${gap};

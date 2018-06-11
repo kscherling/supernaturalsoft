@@ -7,6 +7,7 @@ export const color = getWithProp('color')
 export const fontFamily = getWithProp('fontFamily')
 export const fontSize = getWithProp('fontSize')
 export const spacer = getWithProp('spacer')
+export const lineHeight = getWithProp('lineHeight')
 
 // Exports
 

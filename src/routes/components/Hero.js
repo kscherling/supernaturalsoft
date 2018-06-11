@@ -4,7 +4,7 @@ import {
   color,
   background,
   fontFamily,
-  fontSize,
+  typography,
   marginTop,
   marginBottom
 } from 'styles/css'
@@ -19,8 +19,7 @@ const HeroContainer = styled(SimpleContainer)`
 const HeroCallout = styled(PaddedBox)`
   ${color('mdGray')};
   ${fontFamily('serif')};
-  ${fontSize('titleXl')};
-  line-height: 52px;
+  ${typography('titleXl')};
 
   strong {
     ${color('white')};

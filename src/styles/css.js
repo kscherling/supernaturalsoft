@@ -3,7 +3,8 @@ import {
   color as getColor,
   fontFamily as getFontFamily,
   fontSize as getFontSize,
-  spacer as getSpacer
+  spacer as getSpacer,
+  lineHeight as getLineHeight
 } from 'styles/getters'
 import { cssFor } from 'styles/cssHelpers'
 import { curry } from 'utils/fp'
@@ -13,6 +14,13 @@ export const background = cssFor('background', getColor)
 
 export const fontFamily = cssFor('font-family', getFontFamily)
 export const fontSize = cssFor('font-size', getFontSize)
+export const lineHeight = cssFor('line-height', getLineHeight)
+export const typography = curry(
+  (key, props) => css`
+    ${fontSize(key, props)};
+    ${lineHeight(key, props)};
+  `
+)
 
 export const margin = cssFor('margin', getSpacer)
 export const marginTop = cssFor('margin-top', getSpacer)
