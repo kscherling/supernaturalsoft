@@ -1,6 +1,6 @@
 import { injectGlobal } from 'emotion'
 import theme from 'styles/theme'
-import { color } from 'styles/themeGetters'
+import { color } from 'styles/getters'
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700');

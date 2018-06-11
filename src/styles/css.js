@@ -4,15 +4,9 @@ import {
   fontFamily as getFontFamily,
   fontSize as getFontSize,
   spacer as getSpacer
-} from 'styles/themeGetters'
+} from 'styles/getters'
+import { cssFor } from 'styles/cssHelpers'
 import { curry } from 'utils/fp'
-
-const cssFor = curry(
-  (cssAttr, getterFn, key, props) =>
-    css`
-      ${[cssAttr]}: ${getterFn(key, props)};
-    `
-)
 
 export const color = cssFor('color', getColor)
 export const background = cssFor('background', getColor)

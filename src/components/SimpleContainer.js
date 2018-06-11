@@ -1,35 +1,20 @@
 import React from 'react'
-import { styled, css, color } from 'styles/themeGetters'
+import { styled, css, color } from 'styles/getters'
+import { curry } from 'utils/fp'
 
-const templateColumns = ({ templateColumns }) =>
-  templateColumns &&
-  css`
-    grid-template-columns: ${templateColumns};
-  `
+const styleIf = curry(
+  (cssAttr, prop, props) =>
+    props[prop] &&
+    css`
+      ${cssAttr}: ${props[prop]};
+    `
+)
 
-const templateRows = ({ templateRows }) =>
-  templateRows &&
-  css`
-    grid-template-rows: ${templateRows};
-  `
-
-const justifyContent = ({ justifyContent }) =>
-  justifyContent &&
-  css`
-    justify-content: ${justifyContent};
-  `
-
-const alignItems = ({ alignItems }) =>
-  alignItems &&
-  css`
-    align-items: ${alignItems};
-  `
-
-const gap = ({ gap }) =>
-  gap &&
-  css`
-    grid-gap: ${gap};
-  `
+const templateColumns = styleIf('grid-template-columns', 'templateColumns')
+const templateRows = styleIf('grid-template-rows', 'templateRows')
+const justifyContent = styleIf('justify-content', 'justifyContent')
+const alignItems = styleIf('align-items', 'alignItems')
+const gap = styleIf('grid-gap', 'gap')
 
 const Flow = styled.div`
   width: 100%;

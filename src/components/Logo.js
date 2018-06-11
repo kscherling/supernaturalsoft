@@ -1,5 +1,5 @@
 import React from 'react'
-import { styled, withTheme, color } from 'styles/themeGetters'
+import { styled, withTheme, color } from 'styles/getters'
 import { withProps } from 'recompose'
 
 const Svg = withProps({

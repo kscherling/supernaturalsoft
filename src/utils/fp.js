@@ -26,6 +26,7 @@ export const curry = fn => {
 export const sort = curry((fn, array) => array.sort(fn))
 export const add = curry((a, b) => a + b)
 export const defaultTo = curry((fallback, obj) => obj || fallback)
+export const propOr = curry((key, fallback, obj) => obj[key] || fallback)
 export const eq = curry((expected, value) => Object.is(expected, value))
 export const find = curry((fn, array) => array.find(fn))
 export const prop = curry((name, obj) => obj[name])

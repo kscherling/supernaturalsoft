@@ -32,9 +32,9 @@ const Hero = () => (
   <HeroContainer>
     <HeroCallout>
       Here are a bunch of <strong>really inspiring marketing words</strong> that
-      will make us look chill but totes competent. We're really good at what we
-      do, but we act like we don't know. Seriously though, we're good...and
-      humble. But really freaking good.
+      make us look chill but totes competent. We're really good at what we do,
+      but we act like we don't know. Seriously though, we're good...and
+      humble...but really freaking good.
     </HeroCallout>
   </HeroContainer>
 )
