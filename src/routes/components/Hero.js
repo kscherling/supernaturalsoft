@@ -23,7 +23,7 @@ const Hero = () => (
   <HeroContainer>
     <HeroCallout>
       <strong>Here are a bunch</strong> of really inspiring marketing words that
-      will make us look cool but comptetent.
+      will make us look cool but competent. Let's build it.
     </HeroCallout>
   </HeroContainer>
 )
