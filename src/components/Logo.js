@@ -6,12 +6,12 @@ const Svg = withProps({
   xmlns: 'http://www.w3.org/2000/svg',
   viewBox: '0 0 94.3 25'
 })(styled.svg`
-  height: 25px;
+  height: ${({ height }) => height};
   width: auto;
 `)
 
-const Logo = ({ fill = 'dkGray', theme }) => (
-  <Svg>
+const Logo = ({ height = '25px', fill = 'dkGray', theme, ...rest }) => (
+  <Svg height={height} {...rest}>
     <path
       d="M9,19.5c-0.1-0.2-0.2-0.4-0.2-0.6s-0.1-0.5-0.1-0.7c-0.2,0.2-0.5,0.4-0.7,0.6s-0.6,0.4-0.9,0.5c-0.3,0.1-0.7,0.3-1.1,0.3
       c-0.4,0.1-0.8,0.1-1.2,0.1c-0.7,0-1.4-0.1-2-0.3c-0.6-0.2-1.1-0.5-1.5-0.9s-0.7-0.8-1-1.3c-0.2-0.5-0.3-1-0.3-1.6
