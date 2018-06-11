@@ -5,7 +5,7 @@ import SimpleContainer from 'components/SimpleContainer'
 import { styled, color } from 'styles/helpers'
 
 const NavbarBackground = styled(SimpleContainer)`
-  background: ${color('dkGray')};
+  background: ${color('black')};
   height: 80px;
 `
 
