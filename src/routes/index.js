@@ -1,5 +1,6 @@
 import React from 'react'
+import Hero from 'routes/components/Hero'
 
-const IndexRoute = () => null
+const IndexRoute = () => <Hero />
 
 export default IndexRoute

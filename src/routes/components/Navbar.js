@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from 'components/Logo'
 import { Link } from 'react-router-dom'
 import SimpleContainer from 'components/SimpleContainer'
-import { styled, color } from 'styles/helpers'
+import { styled, color } from 'styles/themeGetters'
 
 const NavbarBackground = styled(SimpleContainer)`
   background: ${color('black')};

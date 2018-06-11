@@ -1,5 +1,5 @@
 import React from 'react'
-import { styled, css, color } from 'styles/helpers'
+import { styled, css, color } from 'styles/themeGetters'
 
 const templateColumns = ({ templateColumns }) =>
   templateColumns &&

@@ -10,15 +10,39 @@ const warn = (key, props) => {
 }
 const valueOrWarn = curry((key, props, value) => value || warn(key, props))
 
-export const color = curry((color, props) =>
+// Getters
+
+export const color = curry((key, props) =>
   compose(
-    valueOrWarn(color, props),
-    prop(color),
+    valueOrWarn(key, props),
+    prop(key),
     propOr('colors', {}),
     propOr('theme', {}),
     defaultTo({})
   )(props)
 )
+
+export const fontFamily = curry((key, props) =>
+  compose(
+    valueOrWarn(key, props),
+    prop(key),
+    propOr('fontFamily', {}),
+    propOr('theme', {}),
+    defaultTo({})
+  )(props)
+)
+
+export const fontSize = curry((key, props) =>
+  compose(
+    valueOrWarn(key, props),
+    prop(key),
+    propOr('fontSize', {}),
+    propOr('theme', {}),
+    defaultTo({})
+  )(props)
+)
+
+// Exports
 
 export { styled, css }
 export { withTheme } from 'emotion-theming'
