@@ -1,20 +1,13 @@
 import React from 'react'
 import { styled, css, color } from 'styles/getters'
 import { curry } from 'utils/fp'
+import { cssIfProp } from 'styles/cssHelpers'
 
-const styleIf = curry(
-  (cssAttr, prop, props) =>
-    props[prop] &&
-    css`
-      ${cssAttr}: ${props[prop]};
-    `
-)
-
-const templateColumns = styleIf('grid-template-columns', 'templateColumns')
-const templateRows = styleIf('grid-template-rows', 'templateRows')
-const justifyContent = styleIf('justify-content', 'justifyContent')
-const alignItems = styleIf('align-items', 'alignItems')
-const gap = styleIf('grid-gap', 'gap')
+const templateColumns = cssIfProp('grid-template-columns', 'templateColumns')
+const templateRows = cssIfProp('grid-template-rows', 'templateRows')
+const justifyContent = cssIfProp('justify-content', 'justifyContent')
+const alignItems = cssIfProp('align-items', 'alignItems')
+const gap = cssIfProp('grid-gap', 'gap')
 
 const Flow = styled.div`
   width: 100%;

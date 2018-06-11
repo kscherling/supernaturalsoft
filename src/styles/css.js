@@ -20,5 +20,11 @@ export const marginBottom = cssFor('margin-bottom', getSpacer)
 export const marginLeft = cssFor('margin-left', getSpacer)
 export const marginRight = cssFor('margin-right', getSpacer)
 
+export const padding = cssFor('padding', getSpacer)
+export const paddingTop = cssFor('padding-top', getSpacer)
+export const paddingBottom = cssFor('padding-bottom', getSpacer)
+export const paddingLeft = cssFor('padding-left', getSpacer)
+export const paddingRight = cssFor('padding-right', getSpacer)
+
 export { styled, css }
 export { withTheme } from 'emotion-theming'

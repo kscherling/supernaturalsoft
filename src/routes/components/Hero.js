@@ -9,18 +9,17 @@ import {
   marginBottom
 } from 'styles/css'
 import SimpleContainer from 'components/SimpleContainer'
+import PaddedBox from 'components/PaddedBox'
 
 const HeroContainer = styled(SimpleContainer)`
   ${color('white')};
   ${background('black')};
 `
 
-const HeroCallout = styled.div`
+const HeroCallout = styled(PaddedBox)`
   ${color('mdGray')};
   ${fontFamily('serif')};
   ${fontSize('titleXl')};
-  ${marginTop('xxl')};
-  ${marginBottom('xxxl')};
   line-height: 52px;
 
   strong {
