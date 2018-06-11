@@ -10,7 +10,7 @@ const Svg = withProps({
   width: auto;
 `)
 
-const Logo = ({ height = '25px', fill = 'dkGray', theme, ...rest }) => (
+const Logo = ({ height = '25px', fill = 'dkGrey', theme, ...rest }) => (
   <Svg height={height} {...rest}>
     <path
       d="M9,19.5c-0.1-0.2-0.2-0.4-0.2-0.6s-0.1-0.5-0.1-0.7c-0.2,0.2-0.5,0.4-0.7,0.6s-0.6,0.4-0.9,0.5c-0.3,0.1-0.7,0.3-1.1,0.3

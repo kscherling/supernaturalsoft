@@ -8,7 +8,7 @@ injectGlobal`
   html {
     box-sizing: border-box;
     font-size: 16px;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: Greyscale;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -16,7 +16,7 @@ injectGlobal`
 
   body {
     font-family: 'Lato', sans-serif;
-    color: ${color('dkGray', { theme })};
+    color: ${color('dkGrey', { theme })};
   }
 
   a {

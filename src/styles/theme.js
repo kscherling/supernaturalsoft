@@ -35,9 +35,9 @@ const lineHeight = {
 const color = {
   white: '#ffffff',
   offWhite: '#f2f2f2',
-  ltGray: '#cccccc',
-  mdGray: '#999999',
-  dkGray: '#333333',
+  ltGrey: '#cccccc',
+  mdGrey: '#999999',
+  dkGrey: '#333333',
   black: '#000000'
 }
 

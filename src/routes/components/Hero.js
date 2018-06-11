@@ -17,7 +17,7 @@ const HeroContainer = styled(SimpleContainer)`
 `
 
 const HeroCallout = styled(PaddedBox)`
-  ${color('mdGray')};
+  ${color('mdGrey')};
   ${fontFamily('serif')};
   ${typography('titleXl')};
 

@@ -10,11 +10,11 @@ const FooterBackground = styled(SimpleContainer)`
 `
 
 const Copyright = styled.div`
-  ${color('mdGray')};
+  ${color('mdGrey')};
 `
 
 const LockupTagline = styled.span`
-  ${color('mdGray')};
+  ${color('mdGrey')};
 `
 const LockUp = styled.div`
   display: flex;
@@ -33,11 +33,11 @@ const PullRight = styled.div`
 
 const Navbar = () => (
   <FooterBackground>
-    <Copyright>&copy; 2018 adjunct</Copyright>
+    <Copyright>&copy; 2018</Copyright>
     <PullRight>
       <LockUp>
         <LockupLogo height="18px" fill="black" />
-        <LockupTagline>let's build</LockupTagline>
+        <LockupTagline>let's build it</LockupTagline>
       </LockUp>
     </PullRight>
   </FooterBackground>
