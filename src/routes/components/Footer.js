@@ -37,7 +37,7 @@ const Navbar = () => (
     <PullRight>
       <LockUp>
         <LockupLogo height="18px" fill="black" />
-        <LockupTagline>awesome tagline</LockupTagline>
+        <LockupTagline>let's build</LockupTagline>
       </LockUp>
     </PullRight>
   </FooterBackground>
