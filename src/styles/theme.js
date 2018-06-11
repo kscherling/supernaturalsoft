@@ -3,6 +3,15 @@ const fontFamily = {
   serif: "'Roboto Slab', serif"
 }
 
+const spacer = {
+  xs: '4px',
+  sm: '7px',
+  md: '14px',
+  xl: '28px',
+  xxl: '42px',
+  xxxl: '70px'
+}
+
 const fontSize = {
   bodySm: '12px',
   bodyMd: '14px',
@@ -13,7 +22,7 @@ const fontSize = {
   titleXl: '36px'
 }
 
-const colors = {
+const color = {
   white: '#ffffff',
   offWhite: '#f2f2f2',
   ltGray: '#cccccc',
@@ -23,7 +32,8 @@ const colors = {
 }
 
 export default {
-  colors,
+  color,
   fontFamily,
-  fontSize
+  fontSize,
+  spacer
 }

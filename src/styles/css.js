@@ -1,38 +1,30 @@
 import styled, { css } from 'react-emotion'
 import {
-  color as colorHelper,
-  fontFamily as fontFamilyHelper,
-  fontSize as fontSizeHelper
+  color as getColor,
+  fontFamily as getFontFamily,
+  fontSize as getFontSize,
+  spacer as getSpacer
 } from 'styles/themeGetters'
 import { curry } from 'utils/fp'
 
-export const color = curry(
-  (key, props) =>
+const cssFor = curry(
+  (cssAttr, getterFn, key, props) =>
     css`
-      color: ${colorHelper(key, props)};
+      ${[cssAttr]}: ${getterFn(key, props)};
     `
 )
 
-export const background = curry(
-  (key, props) =>
-    css`
-      background: ${colorHelper(key, props)};
-    `
-)
+export const color = cssFor('color', getColor)
+export const background = cssFor('background', getColor)
 
-export const fontFamily = curry(
-  (key, props) =>
-    css`
-      font-family: ${fontFamilyHelper(key, props)};
-    `
-)
+export const fontFamily = cssFor('font-family', getFontFamily)
+export const fontSize = cssFor('font-size', getFontSize)
 
-export const fontSize = curry(
-  (key, props) =>
-    css`
-      font-size: ${fontSizeHelper(key, props)};
-    `
-)
+export const margin = cssFor('margin', getSpacer)
+export const marginTop = cssFor('margin-top', getSpacer)
+export const marginBottom = cssFor('margin-bottom', getSpacer)
+export const marginLeft = cssFor('margin-left', getSpacer)
+export const marginRight = cssFor('margin-right', getSpacer)
 
 export { styled, css }
 export { withTheme } from 'emotion-theming'
