@@ -36,6 +36,7 @@ const Flow = styled.div`
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
+  align-items: center;
 `
 
 const Respond = styled.div`
