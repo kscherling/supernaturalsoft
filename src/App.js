@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
+import Logo from 'components/Logo'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">adjunct</h1>
-        </header>
+        <Logo fill="white" />
       </div>
     )
   }

@@ -17,7 +17,7 @@ injectGlobal`
   body {
     font-family: 'Lato', sans-serif;
     color: red;
-    color: ${color('ltGdray', { theme })};
+    color: ${color('dkGray', { theme })};
   }
 
   a {
