@@ -1,4 +1,4 @@
-import { cssIfProp } from 'styles/cssHelpers'
+import cssIfProp from 'styles/helpers/cssIfProp'
 
 export const templateColumns = cssIfProp(
   'grid-template-columns',

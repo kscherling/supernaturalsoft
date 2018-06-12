@@ -6,8 +6,9 @@ import {
   spacer as getSpacer,
   lineHeight as getLineHeight
 } from 'styles/getters'
-import { cssFor, mediaFor } from 'styles/cssHelpers'
 import { curry } from 'utils/fp'
+import mediaFor from 'styles/helpers/mediaFor'
+import cssFor from 'styles/helpers/cssFor'
 
 export const background = cssFor('background', getColor)
 
