@@ -18,7 +18,7 @@ const Contact = () => (
   <SimpleContainer>
     <PaddedBox>
       <Header>Say hey.</Header>
-      <SubHeader>BTW, we're currently accepting new clients...</SubHeader>
+      <SubHeader>Btw, we're currently accepting new clients...</SubHeader>
       <ContactForm />
     </PaddedBox>
   </SimpleContainer>

@@ -22,7 +22,7 @@ const Container = styled.div`
 const ContactForm = () => (
   <Container>
     <form>
-      <Input placeholder="Email to contact you at" />
+      <Input placeholder="Email to get back to you at" />
       <Input placeholder="Type some things..." />
     </form>
   </Container>
