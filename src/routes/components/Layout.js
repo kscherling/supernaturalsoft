@@ -3,16 +3,8 @@ import Diagonal from 'routes/components/Diagonal'
 import styled from 'react-emotion'
 
 const LayoutContainer = styled.div``
-
-const HeroContainer = styled.div`
-  position: relative;
-  z-index: 10;
-`
-const ContentContainer = styled.div`
-  position: relative;
-  z-index: 20;
-`
-
+const HeroContainer = styled.div``
+const ContentContainer = styled.div``
 const Content = styled.div``
 
 const Layout = ({ renderHero, renderContent }) => (

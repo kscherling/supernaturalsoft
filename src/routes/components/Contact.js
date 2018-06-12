@@ -1,32 +1,17 @@
 import React from 'react'
 import SimpleContainer from 'components/SimpleContainer'
 import PaddedBox from 'components/PaddedBox'
-import {
-  styled,
-  typography,
-  color,
-  background,
-  padding,
-  marginTop,
-  marginBottom
-} from 'styles/cssFor'
+import ContactForm from './ContactForm'
+import { styled, typography, color, marginBottom } from 'styles/cssFor'
 
 const Header = styled.div`
   ${typography('titleLg')};
   font-weight: 700;
+  ${marginBottom('sm')};
 `
 
 const SubHeader = styled.div`
   ${color('mdGrey')};
-`
-
-const ContactForm = styled.div`
-  ${background('offWhite')};
-  ${color('mdGrey')};
-  ${marginTop('xl')};
-  ${marginBottom('xl')};
-  ${padding('xl')};
-  text-align: center;
 `
 
 const Contact = () => (
@@ -34,7 +19,7 @@ const Contact = () => (
     <PaddedBox>
       <Header>Say hey.</Header>
       <SubHeader>BTW, we're currently accepting new clients...</SubHeader>
-      <ContactForm>Contact form here</ContactForm>
+      <ContactForm />
     </PaddedBox>
   </SimpleContainer>
 )
