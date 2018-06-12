@@ -32,8 +32,8 @@ const ContactForm = styled.div`
 const Contact = () => (
   <SimpleContainer>
     <PaddedBox>
-      <Header>Say hi!</Header>
-      <SubHeader>Psst, we're currently accepting new clients...</SubHeader>
+      <Header>Say hey.</Header>
+      <SubHeader>BTW, we're currently accepting new clients...</SubHeader>
       <ContactForm>Contact form here</ContactForm>
     </PaddedBox>
   </SimpleContainer>
