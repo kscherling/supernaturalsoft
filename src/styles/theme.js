@@ -41,10 +41,13 @@ const color = {
   black: '#000000'
 }
 
+const breakpoint = { sm: 576, md: 768, lg: 992, xl: 1200 }
+
 export default {
   color,
   fontFamily,
   fontSize,
   lineHeight,
-  spacer
+  spacer,
+  breakpoint
 }

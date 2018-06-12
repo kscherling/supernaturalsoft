@@ -1,5 +1,5 @@
 import React from 'react'
-import { styled, css, color } from 'styles/getters'
+import { styled } from 'styles/css'
 import { curry } from 'utils/fp'
 import { cssIfProp } from 'styles/cssHelpers'
 

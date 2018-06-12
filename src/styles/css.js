@@ -6,12 +6,12 @@ import {
   spacer as getSpacer,
   lineHeight as getLineHeight
 } from 'styles/getters'
-import { cssFor } from 'styles/cssHelpers'
+import { cssFor, mediaFor } from 'styles/cssHelpers'
 import { curry } from 'utils/fp'
 
-export const color = cssFor('color', getColor)
 export const background = cssFor('background', getColor)
 
+export const color = cssFor('color', getColor)
 export const fontFamily = cssFor('font-family', getFontFamily)
 export const fontSize = cssFor('font-size', getFontSize)
 export const lineHeight = cssFor('line-height', getLineHeight)
@@ -33,6 +33,9 @@ export const paddingTop = cssFor('padding-top', getSpacer)
 export const paddingBottom = cssFor('padding-bottom', getSpacer)
 export const paddingLeft = cssFor('padding-left', getSpacer)
 export const paddingRight = cssFor('padding-right', getSpacer)
+
+export const mediaUp = mediaFor('min-width')
+export const mediaDn = mediaFor('max-width')
 
 export { styled, css }
 export { withTheme } from 'emotion-theming'
