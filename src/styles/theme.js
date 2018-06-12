@@ -41,7 +41,13 @@ const color = {
   black: '#000000'
 }
 
-const breakpoint = { sm: 576, md: 768, lg: 992, xl: 1200 }
+//prettier-ignore
+const breakpoint = {
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px'
+}
 
 export default {
   color,

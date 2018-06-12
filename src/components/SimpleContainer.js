@@ -1,12 +1,24 @@
 import React from 'react'
 import {
   styled,
+  css,
   templateRows,
   templateColumns,
   justifyContent,
   alignItems,
   gap
 } from 'styles/cssIf'
+import { mediaUp, mediaDn, paddingLeft, paddingRight } from 'styles/cssFor'
+import { breakpoint as getBreakpoint } from 'styles/getters'
+
+const ifCollapse = ({ collapse, theme }) =>
+  collapse &&
+  css`
+    ${mediaDn('sm', { theme })} {
+      grid-auto-flow: row;
+      grid-template-columns: unset;
+    }
+  `
 
 const Flow = styled.div`
   width: 100%;
@@ -14,6 +26,12 @@ const Flow = styled.div`
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
+
+  ${mediaDn('sm')} {
+    ${paddingLeft('xl')};
+    ${paddingRight('xl')};
+    justify-content: unset;
+  }
 `
 
 const Respond = styled.div`
@@ -26,6 +44,28 @@ const Respond = styled.div`
   ${justifyContent};
   ${templateColumns};
   ${templateRows};
+
+  ${mediaUp('xl')} {
+    width: ${getBreakpoint('xl')};
+  }
+
+  ${mediaDn('xl')} {
+    width: ${getBreakpoint('lg')};
+  }
+
+  ${mediaDn('lg')} {
+    width: ${getBreakpoint('md')};
+  }
+
+  ${mediaDn('md')} {
+    width: ${getBreakpoint('sm')};
+  }
+
+  ${mediaDn('sm')} {
+    width: 100%;
+  }
+
+  ${ifCollapse};
 `
 
 const SimpleContainer = ({ children, className, ...rest }) => (

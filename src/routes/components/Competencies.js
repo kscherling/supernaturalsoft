@@ -6,7 +6,11 @@ import { languages, practices, clients } from 'routes/fixtures/data'
 import { withTheme, spacer } from 'styles/getters'
 
 const Competencies = ({ theme }) => (
-  <SimpleContainer templateColumns="1fr 1fr 1fr" gap={spacer('xl', { theme })}>
+  <SimpleContainer
+    collapse
+    templateColumns="1fr 1fr 1fr"
+    gap={spacer('xl', { theme })}
+  >
     <PaddedBox>
       <BigList title="Technologies" items={languages} />
     </PaddedBox>
