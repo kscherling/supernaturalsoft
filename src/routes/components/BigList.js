@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { styled, color, marginBottom, typography, lineHeight } from 'styles/css'
+import { styled, color, marginBottom, typography, lineHeight } from 'styles/cssFor'
 
 const ListContainer = styled.div`
   ${color('mdGrey')};

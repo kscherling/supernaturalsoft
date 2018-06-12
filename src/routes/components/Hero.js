@@ -7,7 +7,7 @@ import {
   typography,
   marginTop,
   marginBottom
-} from 'styles/css'
+} from 'styles/cssFor'
 import SimpleContainer from 'components/SimpleContainer'
 import PaddedBox from 'components/PaddedBox'
 

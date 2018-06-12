@@ -9,7 +9,7 @@ import {
   padding,
   marginTop,
   marginBottom
-} from 'styles/css'
+} from 'styles/cssFor'
 
 const Header = styled.div`
   ${typography('titleLg')};

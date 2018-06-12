@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from 'components/Logo'
 import { Link } from 'react-router-dom'
 import SimpleContainer from 'components/SimpleContainer'
-import { styled, color, marginRight } from 'styles/css'
+import { styled, color, marginRight } from 'styles/cssFor'
 
 const FooterBackground = styled(SimpleContainer)`
   background: ${color('white')};
