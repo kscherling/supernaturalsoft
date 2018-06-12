@@ -1,8 +1,6 @@
 import React from 'react'
-import { styled } from 'styles/cssFor'
-import { curry } from 'utils/fp'
-import { cssIfProp } from 'styles/cssHelpers'
 import {
+  styled,
   templateRows,
   templateColumns,
   justifyContent,
