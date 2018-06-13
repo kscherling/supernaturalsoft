@@ -11,13 +11,12 @@ import {
 import Input from 'components/Form/Input'
 import Textarea from 'components/Form/Textarea'
 import Button from 'components/Button'
+import FormGroup from 'components/Form/FormGroup'
 
 const Container = styled.div`
-  ${background('offWhite')};
   ${color('mdGrey')};
   ${marginTop('xl')};
   ${marginBottom('xl')};
-  ${padding('xl')};
   text-align: center;
 `
 
@@ -61,22 +60,28 @@ class ContactForm extends Component {
     return (
       <Container>
         <form onSubmit={this.handleSubmit}>
-          <Input
-            onChange={e => this.setState({ email: e.target.value })}
-            value={email}
-            name="email"
-            placeholder="Email to get back to you"
-          />
-          <Textarea
-            rows="10"
-            onChange={e => this.setState({ message: e.target.value })}
-            value={message}
-            name="message"
-            placeholder="Type some things..."
-          />
-          <SubmitButton block type="submit" disabled={!(email && message)}>
-            Submit
-          </SubmitButton>
+          <FormGroup>
+            <Input
+              onChange={e => this.setState({ email: e.target.value })}
+              value={email}
+              name="email"
+              placeholder="Email to get back to you"
+            />
+          </FormGroup>
+          <FormGroup>
+            <Textarea
+              rows="6"
+              onChange={e => this.setState({ message: e.target.value })}
+              value={message}
+              name="message"
+              placeholder="Type some things..."
+            />
+          </FormGroup>
+          <FormGroup buttons>
+            <SubmitButton type="submit" disabled={!(email && message)}>
+              Submit
+            </SubmitButton>
+          </FormGroup>
         </form>
       </Container>
     )

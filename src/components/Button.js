@@ -1,6 +1,13 @@
 import styled, { css } from 'react-emotion'
 import { Link } from 'react-router-dom'
 import withProps from 'recompose/withProps'
+import {
+  paddingTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
+  fontSize
+} from 'styles/cssFor'
 
 const reset = ({ theme }) => css`
   border: 0 none;
@@ -61,8 +68,11 @@ const styleDefault = ({ theme }) =>
 
 const sizeDefault = ({ theme }) =>
   css`
-    font-size: ${theme.fontSize.bodyMd};
-    padding: 0.65rem ${theme.spacer.sm};
+    ${fontSize('titleSm', { theme })};
+    ${paddingTop('md', { theme })};
+    ${paddingBottom('md', { theme })};
+    ${paddingLeft('xl', { theme })};
+    ${paddingRight('xl', { theme })};
   `
 
 const block = ({ block }) =>

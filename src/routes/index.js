@@ -9,8 +9,8 @@ const IndexRoute = () => (
     renderHero={() => <Hero />}
     renderContent={() => (
       <Fragment>
-        <Contact />
         <Competencies />
+        <Contact />
       </Fragment>
     )}
   />

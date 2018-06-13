@@ -7,6 +7,7 @@ import { inputStyles } from 'components/Form/_shared/styles'
 
 const StyledTextarea = styled.textarea`
   ${inputStyles};
+  resize: none;
 `
 
 class Input extends Component {
