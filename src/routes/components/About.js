@@ -16,9 +16,9 @@ const About = ({ toggleContactForm }) => (
   <SimpleContainer>
     <PaddedBox>
       <ContentGroup>
-        Our team was born from a full-fledged product group that worked great
-        together. We wanted to extend that dynamic to other companies pursuing
-        innovative ideas.
+        Our team was born from a product group that worked fantastically
+        together. We wanted to extend that dynamic to others also pursuing lofty
+        & innovative ideas.
       </ContentGroup>
       <br />
       <br />
