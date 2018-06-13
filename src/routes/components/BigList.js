@@ -1,27 +1,21 @@
 import React, { Fragment } from 'react'
-import { styled, color, marginBottom, typography, lineHeight } from 'styles/cssFor'
+import {
+  styled,
+  color,
+  marginBottom,
+  typography,
+  lineHeight
+} from 'styles/cssFor'
+import ContentGroup from 'components/ContentGroup'
 
-const ListContainer = styled.div`
-  ${color('mdGrey')};
-`
-
-const ListTitle = styled.div`
-  ${marginBottom('xl')};
-`
-
-const List = styled.div`
+const ListItem = styled.div`
   ${typography('titleLg')};
 `
 
-const ListItem = styled.div``
-
 const BigList = ({ title, items = [] }) => (
-  <ListContainer>
-    <ListTitle>{title}</ListTitle>
-    <List>
-      {items.map((item, idx) => <ListItem key={idx}>{item}</ListItem>)}
-    </List>
-  </ListContainer>
+  <ContentGroup title={title}>
+    {items.map((item, idx) => <ListItem key={idx}>{item}</ListItem>)}
+  </ContentGroup>
 )
 
 export default BigList
