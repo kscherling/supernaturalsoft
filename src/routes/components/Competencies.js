@@ -18,7 +18,7 @@ const Competencies = ({ theme }) => (
       <BigList title="Practices" items={practices} />
     </PaddedBox>
     <PaddedBox>
-      <BigList title="Work" items={clients} />
+      <BigList title="Experience" items={clients} />
     </PaddedBox>
   </SimpleContainer>
 )
