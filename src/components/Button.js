@@ -38,7 +38,7 @@ const reset = ({ theme }) => css`
   }
 `
 
-const base = ({ theme, kind }) =>
+const base = ({ theme }) =>
   css`
     transition: background 0.15s, border 0.15s, color 0.15s, opacity 0.15s;
     font-weight: bold;
@@ -46,8 +46,7 @@ const base = ({ theme, kind }) =>
     line-height: ${theme.lineHeight.bodyMd};
   `
 
-const styleDefault = ({ theme, kind }) =>
-  !kind &&
+const styleDefault = ({ theme }) =>
   css`
     background: ${theme.color.dkGrey};
     color: ${theme.color.white};
@@ -60,8 +59,7 @@ const styleDefault = ({ theme, kind }) =>
     }
   `
 
-const sizeDefault = ({ theme, size }) =>
-  !size &&
+const sizeDefault = ({ theme }) =>
   css`
     font-size: ${theme.fontSize.bodyMd};
     padding: 0.65rem ${theme.spacer.sm};
