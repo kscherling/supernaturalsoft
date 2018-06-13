@@ -31,14 +31,18 @@ const PullRight = styled.div`
   justify-content: flex-end;
 `
 
+const Hold = () => (
+  <LockUp>
+    <LockupLogo height="18px" fill="black" />
+    <LockupTagline>let's build it</LockupTagline>
+  </LockUp>
+)
+
 const Navbar = () => (
   <FooterBackground>
     <Copyright>&copy; 2018</Copyright>
     <PullRight>
-      <LockUp>
-        <LockupLogo height="18px" fill="black" />
-        <LockupTagline>let's build it</LockupTagline>
-      </LockUp>
+      <LockupLogo height="18px" fill="black" />
     </PullRight>
   </FooterBackground>
 )
