@@ -9,6 +9,7 @@ import {
   marginBottom
 } from 'styles/cssFor'
 import Input from 'components/Input'
+import Button from 'components/Button'
 
 const Container = styled.div`
   ${background('offWhite')};
@@ -17,6 +18,10 @@ const Container = styled.div`
   ${marginBottom('xl')};
   ${padding('xl')};
   text-align: center;
+`
+
+const SubmitButton = styled(Button)`
+  ${marginTop('xl')};
 `
 
 const encodeForm = body =>
@@ -67,7 +72,9 @@ class ContactForm extends Component {
             name="message"
             placeholder="Type some things..."
           />
-          <Input type="submit" disabled={!(email && message)} />
+          <SubmitButton block type="submit" disabled={!(email && message)}>
+            Submit
+          </SubmitButton>
         </form>
       </Container>
     )
