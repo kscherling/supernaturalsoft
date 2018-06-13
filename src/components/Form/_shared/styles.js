@@ -1,13 +1,19 @@
-import { transform } from './styles'
-import LabelContainer from './LabelContainer'
-import Label from './Label'
-import styled from 'react-emotion'
+import styled, { css } from 'react-emotion'
+import { transform } from 'components/Form/shared/styles'
+import LabelContainer from 'components/Form/shared/LabelContainer'
+import Label from 'components/Form/shared/Label'
 import { color } from 'styles/cssFor'
 import { color as getColor } from 'styles/getters'
 
-const StyledInput = styled.input`
+export const transform = css`
+  transform: translate3d(0, -2rem, 0);
+`
+
+export const transitionTiming = '0.3s'
+
+export const inputStyles = props => css`
   position: relative;
-  display: ${props => (props.inline ? 'inline' : 'block')};
+  display: ${props.inline ? 'inline' : 'block'};
   border: none;
   border-radius: 0;
   font-weight: bold;
@@ -15,7 +21,7 @@ const StyledInput = styled.input`
 
   margin-top: 1.25rem;
   padding: 0.85rem 0;
-  width: ${props => props.width || '100%'};
+  width: ${props.width || '100%'};
   background: transparent;
   color: #595f6e;
 
@@ -60,5 +66,3 @@ const StyledInput = styled.input`
     transform: translate3d(0, 0, 0);
   }
 `
-
-export default StyledInput

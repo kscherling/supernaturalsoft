@@ -1,8 +1,12 @@
-import Container from './Container'
-import Label from './Label'
-import LabelContainer from './LabelContainer'
+import Container from 'components/Form/shared/Container'
+import Label from 'components/Form/shared/Label'
+import LabelContainer from 'components/Form/shared/LabelContainer'
 import React, { Component } from 'react'
-import StyledInput from './StyledInput'
+import { inputStyles } from './shared/styles'
+
+const StyledInput = styled.input`
+  ${inputStyles};
+`
 
 class Input extends Component {
   state = {
