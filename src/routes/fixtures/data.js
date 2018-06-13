@@ -5,13 +5,6 @@ export const languages = [
   'AWS'
 ]
 
-export const practices = [
-  'Agile',
-  'Cloud-based',
-  'Continuous Integration',
-  'Rapid-prototyping',
-  'Architecture',
-  'Design'
-]
+export const practices = ['Agile', 'Architecture', 'Cloud', 'Code', 'Design']
 
 export const clients = ['Nike', 'Chegg', 'Pandora', 'Netflix']
