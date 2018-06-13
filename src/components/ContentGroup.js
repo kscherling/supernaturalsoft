@@ -21,7 +21,7 @@ const Content = styled.div`
 
 const ContentGroup = ({ title, children }) => (
   <ContentContainer>
-    <ContentTitle>{title}</ContentTitle>
+    {title ? <ContentTitle>{title}</ContentTitle> : null}
     <Content>{children}</Content>
   </ContentContainer>
 )

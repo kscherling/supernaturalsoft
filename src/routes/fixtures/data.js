@@ -1,11 +1,7 @@
 export const languages = [
-  'Elixir',
-  'Ruby',
-  'JS',
-  'Rails',
-  'Phoenix',
-  'React',
-  'Ember',
+  'Elixir/Phoenix',
+  'Ruby/Rails',
+  'JS/React/Ember',
   'AWS'
 ]
 
@@ -15,7 +11,7 @@ export const practices = [
   'Continuous Integration',
   'Production Readiness',
   'Rapid-prototyping',
-  'User-centered'
+  'User-centered design'
 ]
 
 export const clients = ['Nike', 'Chegg', 'Pandora', 'Netflix']

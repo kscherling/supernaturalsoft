@@ -12,10 +12,10 @@ const Competencies = ({ theme }) => (
     gap={spacer('xl', { theme })}
   >
     <PaddedBox>
-      <BigList title="Technologies" items={languages} />
+      <BigList title="Practices" items={practices} />
     </PaddedBox>
     <PaddedBox>
-      <BigList title="Practices" items={practices} />
+      <BigList title="Technologies" items={languages} />
     </PaddedBox>
     <PaddedBox>
       <BigList title="Experience" items={clients} />

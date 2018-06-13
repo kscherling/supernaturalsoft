@@ -29,12 +29,13 @@ const HeroCallout = styled(PaddedBox)`
 const Hero = () => (
   <HeroContainer>
     <HeroCallout>
-      Here are a bunch of <strong>really inspiring marketing words</strong> that
-      make us look chill but totes competent. We're really good at what we do,
-      but we act like we don't know. Seriously though, we're good...and
-      humble...but really freaking good.
+      High velocity <strong>product team</strong>.
+      <br />
+      We move fast, break things.
     </HeroCallout>
   </HeroContainer>
 )
 
 export default Hero
+
+// Move fast and break things.
