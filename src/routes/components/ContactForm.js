@@ -16,7 +16,6 @@ import FormGroup from 'components/Form/FormGroup'
 const Container = styled.div`
   ${color('mdGrey')};
   ${marginTop('xl')};
-  ${marginBottom('xl')};
   text-align: center;
 `
 
