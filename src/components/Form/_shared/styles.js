@@ -1,7 +1,6 @@
 import styled, { css } from 'react-emotion'
-import { transform } from 'components/Form/shared/styles'
-import LabelContainer from 'components/Form/shared/LabelContainer'
-import Label from 'components/Form/shared/Label'
+import LabelContainer from 'components/Form/_shared/LabelContainer'
+import Label from 'components/Form/_shared/Label'
 import { color } from 'styles/cssFor'
 import { color as getColor } from 'styles/getters'
 
@@ -11,9 +10,9 @@ export const transform = css`
 
 export const transitionTiming = '0.3s'
 
-export const inputStyles = props => css`
+export const inputStyles = ({ inline, width, theme }) => css`
   position: relative;
-  display: ${props.inline ? 'inline' : 'block'};
+  display: ${inline ? 'inline' : 'block'};
   border: none;
   border-radius: 0;
   font-weight: bold;
@@ -21,7 +20,7 @@ export const inputStyles = props => css`
 
   margin-top: 1.25rem;
   padding: 0.85rem 0;
-  width: ${props.width || '100%'};
+  width: ${width || '100%'};
   background: transparent;
   color: #595f6e;
 
@@ -40,7 +39,7 @@ export const inputStyles = props => css`
   }
 
   &:focus + ${LabelContainer} {
-    ${color('mdGrey')};
+    ${color('mdGrey', { theme })};
   }
 
   &:focus + ${LabelContainer}::after {
@@ -57,12 +56,12 @@ export const inputStyles = props => css`
   }
 
   &:invalid + ${LabelContainer}::after {
-    border-bottom-color: ${getColor('dkGrey')};
+    border-bottom-color: ${getColor('dkGrey', { theme })};
     transform: translate3d(0, 0, 0);
   }
 
   &:invalid:focus + ${LabelContainer}::after {
-    border-bottom-color: ${getColor('dkGrey')};
+    border-bottom-color: ${getColor('dkGrey', { theme })};
     transform: translate3d(0, 0, 0);
   }
 `

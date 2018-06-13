@@ -4,9 +4,6 @@ import { color } from 'styles/cssFor'
 import { color as getColor } from 'styles/getters'
 
 const LabelContainer = styled.label`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-weight: bold;
   font-size: 0.85rem;
   user-select: none;
@@ -16,7 +13,7 @@ const LabelContainer = styled.label`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 1em);
+  height: calc(100% - 1.25rem);
   text-align: left;
   pointer-events: none;
   transition: color ${transitionTiming};

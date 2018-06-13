@@ -8,7 +8,8 @@ import {
   marginTop,
   marginBottom
 } from 'styles/cssFor'
-import Input from 'components/Input'
+import Input from 'components/Form/Input'
+import Textarea from 'components/Form/Textarea'
 import Button from 'components/Button'
 
 const Container = styled.div`
@@ -66,7 +67,8 @@ class ContactForm extends Component {
             name="email"
             placeholder="Email to get back to you"
           />
-          <Input
+          <Textarea
+            rows="10"
             onChange={e => this.setState({ message: e.target.value })}
             value={message}
             name="message"

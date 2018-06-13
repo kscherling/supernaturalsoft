@@ -1,8 +1,9 @@
-import Container from 'components/Form/shared/Container'
-import Label from 'components/Form/shared/Label'
-import LabelContainer from 'components/Form/shared/LabelContainer'
 import React, { Component } from 'react'
-import { inputStyles } from './shared/styles'
+import styled from 'react-emotion'
+import Container from 'components/Form/_shared/Container'
+import Label from 'components/Form/_shared/Label'
+import LabelContainer from 'components/Form/_shared/LabelContainer'
+import { inputStyles } from 'components/Form/_shared/styles'
 
 const StyledInput = styled.input`
   ${inputStyles};
