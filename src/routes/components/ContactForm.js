@@ -30,6 +30,7 @@ class ContactForm extends Component {
   handleSubmit = e => {
     e.preventDefault()
     const { email, message } = this.state
+
     fetch(process.env.REACT_APP_CONTACT_LAMBDA_URL, {
       method: 'POST',
       body: encodeForm({ email, message }),
@@ -66,7 +67,7 @@ class ContactForm extends Component {
             name="message"
             placeholder="Type some things..."
           />
-          <Input type="submit" />
+          <Input type="submit" disabled={!(email && message)} />
         </form>
       </Container>
     )
