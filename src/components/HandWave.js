@@ -30,36 +30,36 @@ const HandWave = () => (
       transform="translate(-6.26 -1.5)"
       fill="none"
       stroke="#444"
-      stroke-linecap="round"
-      stroke-miterlimit="10"
-      stroke-width="4px"
+      strokeLinecap="round"
+      strokeMiterlimit="10"
+      strokeWidth="4px"
     />
     <path
       d="M77.44,3.5A24.33,24.33,0,0,1,86.07,12a37,37,0,0,1,4.67,13"
       transform="translate(-6.26 -1.5)"
       fill="none"
       stroke="#444"
-      stroke-linecap="round"
-      stroke-miterlimit="10"
-      stroke-width="4px"
+      strokeLinecap="round"
+      strokeMiterlimit="10"
+      strokeWidth="4px"
     />
     <path
       d="M35.71,110.73s-5.86.39-12.35-4.09A41.11,41.11,0,0,1,12.84,95.46"
       transform="translate(-6.26 -1.5)"
       fill="none"
       stroke="#444"
-      stroke-linecap="round"
-      stroke-miterlimit="10"
-      stroke-width="4px"
+      strokeLinecap="round"
+      strokeMiterlimit="10"
+      strokeWidth="4px"
     />
     <path
       d="M31.53,120.56a24.39,24.39,0,0,1-11.68-3.22,36.84,36.84,0,0,1-10.44-9.12"
       transform="translate(-6.26 -1.5)"
       fill="none"
       stroke="#444"
-      stroke-linecap="round"
-      stroke-miterlimit="10"
-      stroke-width="4px"
+      strokeLinecap="round"
+      strokeMiterlimit="10"
+      strokeWidth="4px"
     />
   </Svg>
 )

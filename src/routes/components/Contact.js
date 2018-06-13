@@ -13,18 +13,16 @@ import {
   padding,
   mediaDn
 } from 'styles/cssFor'
+import Overlay from 'components/Overlay'
 import HandWave from 'components/HandWave'
 
 const Container = styled(SimpleContainer)`
-  ${background('offWhite')};
+  height: 100vh;
 `
 
 const ContactContainer = styled.div`
-  ${background('white')};
   ${marginTop('xxxl')};
   ${marginBottom('xxxl')};
-  ${padding('xl')};
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   width: 500px;
 
   ${mediaDn('sm')} {
@@ -36,32 +34,20 @@ const Icon = styled.div`
   display: flex;
   justify-content: center;
   ${marginTop('md')};
-  ${marginBottom('xxl')};
+  ${marginBottom('xxxl')};
 `
 
-const Header = styled.div`
-  ${typography('titleLg')};
-  font-weight: 700;
-  ${marginBottom('sm')};
-  text-align: center;
-`
-
-const SubHeader = styled.div`
-  ${color('mdGrey')};
-  text-align: center;
-`
-
-const Contact = () => (
-  <Container justifyContent="center">
-    <ContactContainer>
-      <Icon>
-        <HandWave />
-      </Icon>
-      <Header>Hello.</Header>
-      <SubHeader>We'd love to hear from you.</SubHeader>
-      <ContactForm />
-    </ContactContainer>
-  </Container>
+const Contact = ({ onClose, active }) => (
+  <Overlay onClose={onClose} active={active}>
+    <Container justifyContent="center">
+      <ContactContainer>
+        <Icon>
+          <HandWave />
+        </Icon>
+        <ContactForm />
+      </ContactContainer>
+    </Container>
+  </Overlay>
 )
 
 export default Contact
