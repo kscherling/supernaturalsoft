@@ -13,6 +13,7 @@ import {
   padding,
   mediaDn
 } from 'styles/cssFor'
+import HandWave from 'components/HandWave'
 
 const Container = styled(SimpleContainer)`
   ${background('offWhite')};
@@ -31,6 +32,13 @@ const ContactContainer = styled.div`
   }
 `
 
+const Icon = styled.div`
+  display: flex;
+  justify-content: center;
+  ${marginTop('md')};
+  ${marginBottom('xxl')};
+`
+
 const Header = styled.div`
   ${typography('titleLg')};
   font-weight: 700;
@@ -46,8 +54,11 @@ const SubHeader = styled.div`
 const Contact = () => (
   <Container justifyContent="center">
     <ContactContainer>
-      <Header>Say hey.</Header>
-      <SubHeader>Btw, we're currently accepting new clients...</SubHeader>
+      <Icon>
+        <HandWave />
+      </Icon>
+      <Header>Hello.</Header>
+      <SubHeader>We'd love to hear from you.</SubHeader>
       <ContactForm />
     </ContactContainer>
   </Container>

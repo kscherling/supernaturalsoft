@@ -29,7 +29,7 @@ const HeroCallout = styled(PaddedBox)`
 const Hero = () => (
   <HeroContainer>
     <HeroCallout>
-      High velocity <strong>product team</strong>.
+      Your high velocity <strong>product team</strong>.
       <br />
       We move fast, break things.
     </HeroCallout>

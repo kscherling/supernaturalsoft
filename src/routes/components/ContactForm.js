@@ -78,7 +78,7 @@ class ContactForm extends Component {
           </FormGroup>
           <FormGroup buttons>
             <SubmitButton type="submit" disabled={!(email && message)}>
-              Submit
+              Say hello
             </SubmitButton>
           </FormGroup>
         </form>

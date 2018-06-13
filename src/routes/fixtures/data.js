@@ -9,9 +9,9 @@ export const practices = [
   'Agile',
   'Cloud-based',
   'Continuous Integration',
-  'Production Readiness',
   'Rapid-prototyping',
-  'User-centered design'
+  'Architecture',
+  'Design'
 ]
 
 export const clients = ['Nike', 'Chegg', 'Pandora', 'Netflix']
