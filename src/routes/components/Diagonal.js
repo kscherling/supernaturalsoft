@@ -19,10 +19,9 @@ const Svg = withProps({
 
 const Diagonal = ({ theme, fromColor, toColor, reverse }) => (
   <Svg reverse={reverse}>
-    <rect x="0" width="801" height="50" fill={color('black', { theme })} />
-    <polygon points="801 50,0,50 0,0 " fill={color('white', { theme })} />
+    <rect x="0" width="801" height="50" fill={color('white', { theme })} />
+    <polygon points="0,0 801,50 801,0 0,0" fill={color('black', { theme })} />
   </Svg>
 )
 
-// fill={color('white', { theme })
 export default withTheme(Diagonal)
