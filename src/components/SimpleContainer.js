@@ -63,6 +63,7 @@ const Respond = styled.div`
 
   ${mediaDn('sm')} {
     width: 100%;
+    display: block;
   }
 
   ${ifCollapse};
