@@ -2,8 +2,9 @@ import React from 'react'
 import SimpleContainer from 'components/SimpleContainer'
 import ContactForm from './ContactForm'
 import { styled, marginTop, marginBottom, mediaDn } from 'styles/cssFor'
-import Overlay from 'components/Overlay'
 import HandWave from 'components/HandWave'
+import Modal from 'components/Modal/index'
+import Button from 'components/Button'
 
 const Container = styled(SimpleContainer)`
   height: 100vh;
@@ -26,17 +27,20 @@ const Icon = styled.div`
   ${marginBottom('xxxl')};
 `
 
-const Contact = ({ onClose, active }) => (
-  <Overlay onClose={onClose} active={active}>
-    <Container justifyContent="center">
-      <ContactContainer>
-        <Icon>
-          <HandWave />
-        </Icon>
-        <ContactForm />
-      </ContactContainer>
-    </Container>
-  </Overlay>
+const Contact = () => (
+  <Modal
+    renderTrigger={({ toggle }) => <Button onClick={toggle}>Sey hello</Button>}
+    renderModal={({ toggle }) => (
+      <Container justifyContent="center">
+        <ContactContainer>
+          <Icon>
+            <HandWave />
+          </Icon>
+          <ContactForm />
+        </ContactContainer>
+      </Container>
+    )}
+  />
 )
 
 export default Contact

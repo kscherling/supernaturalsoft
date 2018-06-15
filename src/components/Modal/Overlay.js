@@ -1,35 +1,44 @@
-import styled, { css } from 'react-emotion'
+import React from 'react'
+import styled from 'react-emotion'
+import { color, padding } from 'styles/cssFor'
+import { spacer } from 'styles/getters'
+import posed from 'react-pose'
 
-const animationState = ({ animationState }) => {
-  switch (animationState) {
-    case 'entering':
-    case 'entered':
-      return css`
-        visibility: visible;
-        opacity: 1;
-      `
-    case 'exiting':
-    case 'exited':
-      return css`
-        visibility: hidden;
-        opacity: 0;
-      `
-    default:
-    // do nothing
-  }
-}
-
-const Overlay = styled.div`
+const FixedContainer = styled(
+  posed.div({
+    enter: { opacity: 1 },
+    exit: { opacity: 0 }
+  })
+)`
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  transition: all 0.3s;
-  z-index: 1049;
-
-  ${animationState};
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+  opacity: 0;
 `
 
-export default Backdrop
+const Close = styled.div`
+  position: absolute;
+  top: ${spacer('sm')};
+  right: ${spacer('md')};
+  ${color('mdGrey')};
+  ${padding('md')};
+  z-index: 1020;
+
+  &:hover {
+    ${color('dkGrey')};
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+`
+
+const Overlay = ({ open, onClose, children, ...args }) => (
+  <FixedContainer {...args}>
+    <Close onClick={onClose}>Close (esc)</Close>
+    {children}
+  </FixedContainer>
+)
+
+export default Overlay

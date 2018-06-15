@@ -4,6 +4,7 @@ import Competencies from 'routes/components/Competencies'
 import Contact from 'routes/components/Contact'
 import Layout from 'routes/components/Layout'
 import About from 'routes/components/About'
+import Animated from 'components/Animated'
 
 class IndexRoute extends Component {
   state = {
@@ -23,12 +24,9 @@ class IndexRoute extends Component {
         renderHero={() => <Hero />}
         renderContent={() => (
           <Fragment>
-            <About toggleContactForm={this.toggleContactForm} />
+            <Animated />
+            <About />
             <Competencies />
-            <Contact
-              active={showContactForm}
-              onClose={this.toggleContactForm}
-            />
           </Fragment>
         )}
       />

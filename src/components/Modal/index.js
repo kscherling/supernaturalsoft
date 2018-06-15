@@ -1,56 +1,31 @@
-import React, { Component, Fragment, createContext } from 'react'
-import Backdrop from './Backdrop'
-import Body from './Body'
-import CancelButton from './CancelButton'
-import Container from './Container'
-import Content from './Content'
-import Footer from './Footer'
-import Header from './Header'
-import Title from './Title'
+import React, { Component, Fragment, createRef } from 'react'
+import styled from 'react-emotion'
 import PropTypes from 'prop-types'
-import Transition from 'react-transition-group/Transition'
-import invariant from 'invariant'
-import { createPortal } from 'react-dom'
-import { ESC } from '../../utils/keyCodes'
-import { Provider } from '../../contexts/Modal'
+import posed, { PoseGroup } from 'react-pose'
+import Overlay from './Overlay'
+import Portal from './Portal'
+import Modal from './Modal'
 
-class Modal extends Component {
-  static Body = Body
-  static CancelButton = CancelButton
-  static Footer = Footer
-  static Header = Header
-  static Title = Title
+const ESC = 27
 
+class ModalIndex extends Component {
   static propTypes = {
     dismissable: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired,
-    open: PropTypes.bool.isRequired,
-    size: PropTypes.oneOf(['lg'])
+    renderTrigger: PropTypes.func.isRequired,
+    renderModal: PropTypes.func.isRequired
   }
 
   static defaultProps = {
-    dismissable: true
+    dismissable: true,
+    renderTrigger: () => null,
+    renderModal: () => null
   }
 
-  container = document.createElement('div')
-  modalRoot = document.getElementById('modal-root')
-
-  constructor() {
-    super()
-
-    if (process.env.NODE_ENV !== 'production') {
-      invariant(
-        this.modalRoot,
-        'This app does not contain a modal root. Follow the steps at ' +
-          'https://invent.focusvision.com/Portland/stylist#modals to add one ' +
-          'to your app.'
-      )
-    }
+  state = {
+    open: this.props.open || false
   }
 
   componentDidMount() {
-    this.modalRoot.appendChild(this.container)
-
     document.addEventListener('keydown', this.handleKeydown)
 
     if (this.props.open) {
@@ -71,9 +46,7 @@ class Modal extends Component {
   }
 
   componentWillUnmount() {
-    this.modalRoot.removeChild(this.container)
     this.resetScrolling()
-
     document.removeEventListener('keydown', this.handleKeydown)
   }
 
@@ -86,15 +59,14 @@ class Modal extends Component {
     document.body.style.overflow = this.initialBodyOverflow
   }
 
-  listenForKeydown = () => {
-    const { dismissable, open } = this.props
-
-    if (open && dismissable) {
-    }
+  toggle = () => {
+    console.log('toggle')
+    this.setState({ open: !this.state.open })
   }
 
   handleKeydown = e => {
-    const { dismissable, open, onClose } = this.props
+    const { dismissable } = this.props
+    const { open } = this.state
 
     if (!dismissable || !open) {
       return
@@ -102,36 +74,32 @@ class Modal extends Component {
 
     switch (e.keyCode) {
       case ESC:
-        onClose()
+        this.toggle()
       default:
       // do nothing
     }
   }
 
   render() {
-    const { dismissable, children, onClose, open, size } = this.props
+    const { dismissable, renderModal, renderTrigger } = this.props
+    const { toggle } = this
+    const { open } = this.state
 
-    return createPortal(
-      <Provider value={{ dismissable, onClose }}>
-        <Transition in={open} timeout={300}>
-          {state => (
-            <Fragment>
-              <Backdrop animationState={state} />
-              <Container
-                animationState={state}
-                onClick={dismissable ? onClose : null}
-              >
-                <Content onClick={e => e.stopPropagation()} size={size}>
-                  {children}
-                </Content>
-              </Container>
-            </Fragment>
-          )}
-        </Transition>
-      </Provider>,
-      this.container
+    return (
+      <Fragment>
+        {renderTrigger({ toggle, open })}
+        <Portal>
+          <PoseGroup>
+            {open && (
+              <Overlay key="overlay" onClose={toggle}>
+                <Modal>{renderModal({ toggle, open })}</Modal>
+              </Overlay>
+            )}
+          </PoseGroup>
+        </Portal>
+      </Fragment>
     )
   }
 }
 
-export default Modal
+export default ModalIndex
