@@ -24,7 +24,6 @@ class IndexRoute extends Component {
         renderHero={() => <Hero />}
         renderContent={() => (
           <Fragment>
-            <Animated />
             <About />
             <Competencies />
           </Fragment>

@@ -19,10 +19,10 @@ const About = ({ toggleContactForm }) => (
   <SimpleContainer>
     <PaddedBox>
       <ContentGroup>
-        Our team was born out of a product group that worked well together. What
-        we do best:
+        Our team was born out of a product group that worked well together.
+        <br />
+        <br />
         <Contact />
-        <BigList items={DoBest} />
       </ContentGroup>
     </PaddedBox>
   </SimpleContainer>

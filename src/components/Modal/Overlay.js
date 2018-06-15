@@ -6,7 +6,7 @@ import posed from 'react-pose'
 
 const FixedContainer = styled(
   posed.div({
-    enter: { opacity: 1 },
+    enter: { opacity: 1, delayChildren: 300 },
     exit: { opacity: 0 }
   })
 )`
@@ -14,7 +14,7 @@ const FixedContainer = styled(
   top: 0;
   height: 100vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.99);
   z-index: 1000;
   opacity: 0;
 `
@@ -34,9 +34,9 @@ const Close = styled.div`
   }
 `
 
-const Overlay = ({ open, onClose, children, ...args }) => (
+const Overlay = ({ open, onClose, children, dismissable, ...args }) => (
   <FixedContainer {...args}>
-    <Close onClick={onClose}>Close (esc)</Close>
+    {dismissable && <Close onClick={onClose}>Close (esc)</Close>}
     {children}
   </FixedContainer>
 )

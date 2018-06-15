@@ -10,31 +10,33 @@ const ESC = 27
 
 class ModalIndex extends Component {
   static propTypes = {
-    dismissable: PropTypes.bool.isRequired,
+    dismissable: PropTypes.bool,
+    open: PropTypes.bool,
     renderTrigger: PropTypes.func.isRequired,
     renderModal: PropTypes.func.isRequired
   }
 
   static defaultProps = {
     dismissable: true,
+    open: false,
     renderTrigger: () => null,
     renderModal: () => null
   }
 
   state = {
-    open: this.props.open || false
+    open: this.props.open
   }
 
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeydown)
 
-    if (this.props.open) {
+    if (this.state.open) {
       this.freezeScrolling()
     }
   }
 
-  componentDidUpdate({ open: prevOpen }) {
-    const { open } = this.props
+  componentDidUpdate(_, { open: prevOpen }) {
+    const { open } = this.state
 
     if (!prevOpen && open) {
       this.freezeScrolling()
@@ -91,7 +93,7 @@ class ModalIndex extends Component {
         <Portal>
           <PoseGroup>
             {open && (
-              <Overlay key="overlay" onClose={toggle}>
+              <Overlay key="overlay" onClose={toggle} dismissable={dismissable}>
                 <Modal>{renderModal({ toggle, open })}</Modal>
               </Overlay>
             )}
