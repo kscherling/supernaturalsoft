@@ -61,7 +61,6 @@ class ModalIndex extends Component {
   }
 
   toggle = () => {
-    console.log('toggle')
     this.setState({ open: !this.state.open })
   }
 

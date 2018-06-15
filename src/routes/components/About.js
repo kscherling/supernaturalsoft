@@ -17,7 +17,8 @@ const About = ({ toggleContactForm }) => (
   <SimpleContainer>
     <PaddedBox>
       <ContentGroup>
-        Our team was born out of a product group that worked well together.
+        Our team was born out of a fully-fledged product group that worked well
+        together.
         <br />
         <br />
         <SayHello />

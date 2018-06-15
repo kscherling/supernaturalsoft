@@ -28,8 +28,8 @@ const HeroCallout = styled(PaddedBox)`
 const Hero = () => (
   <HeroContainer>
     <HeroCallout>
-      We are a portland-based boutique software firm <br />
-      specializing in quality feature development.
+      We are a portland-based boutique software firm specializing in quality
+      feature development.
     </HeroCallout>
   </HeroContainer>
 )

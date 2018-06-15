@@ -12,8 +12,9 @@ const FixedContainer = styled(
 )`
   position: fixed;
   top: 0;
-  height: 100vh;
-  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(255, 255, 255, 0.99);
   z-index: 1000;
   opacity: 0;
