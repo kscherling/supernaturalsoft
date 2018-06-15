@@ -4,8 +4,8 @@ import posed from 'react-pose'
 
 const Modal = styled(
   posed.div({
-    enter: { y: 0, opacity: 1 },
-    exit: { y: 100, opacity: 0 }
+    enter: { staggerChildren: 100 },
+    exit: { staggerChildren: 100, staggerDirection: -1 }
   })
 )`
   position: fixed;

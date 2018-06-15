@@ -4,7 +4,7 @@ import ContentGroup from 'components/ContentGroup'
 import PaddedBox from 'components/PaddedBox'
 import Button from 'components/Button'
 import BigList from 'routes/components/BigList'
-import Contact from './Contact'
+import SayHello from './SayHello'
 
 const DoBest = [
   'Features & products out of roadmap reach',
@@ -22,7 +22,7 @@ const About = ({ toggleContactForm }) => (
         Our team was born out of a product group that worked well together.
         <br />
         <br />
-        <Contact />
+        <SayHello />
       </ContentGroup>
     </PaddedBox>
   </SimpleContainer>

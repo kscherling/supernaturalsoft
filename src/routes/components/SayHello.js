@@ -2,6 +2,7 @@ import React from 'react'
 import SimpleContainer from 'components/SimpleContainer'
 import ContactForm from './ContactForm'
 import { styled, marginTop, marginBottom, mediaDn } from 'styles/cssFor'
+import posed from 'react-pose'
 import HandWave from 'components/HandWave'
 import Modal from 'components/Modal/index'
 import Button from 'components/Button'
@@ -20,7 +21,12 @@ const ContactContainer = styled.div`
   }
 `
 
-const Icon = styled.div`
+const Icon = styled(
+  posed.div({
+    enter: { y: 0, opacity: 1, delay: 150 },
+    exit: { y: -100, opacity: 0 }
+  })
+)`
   display: flex;
   justify-content: center;
   ${marginTop('md')};

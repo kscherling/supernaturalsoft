@@ -56,7 +56,7 @@ class ContactForm extends Component {
               onChange={e => this.setState({ email: e.target.value })}
               value={email}
               name="email"
-              placeholder="Email to get back to you"
+              placeholder="Contact info..."
             />
           </FormGroup>
           <FormGroup>
@@ -65,7 +65,7 @@ class ContactForm extends Component {
               onChange={e => this.setState({ message: e.target.value })}
               value={message}
               name="message"
-              placeholder="Type some things..."
+              placeholder="Message..."
             />
           </FormGroup>
           <FormGroup buttons>

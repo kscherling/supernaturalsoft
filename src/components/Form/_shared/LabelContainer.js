@@ -5,9 +5,8 @@ import { color as getColor } from 'styles/getters'
 
 const LabelContainer = styled.label`
   font-weight: bold;
-  font-size: 0.85rem;
   user-select: none;
-  ${color('ltGrey')};
+  ${color('mdGrey')};
 
   position: absolute;
   bottom: 0;

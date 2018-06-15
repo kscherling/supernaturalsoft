@@ -7,7 +7,7 @@ import posed from 'react-pose'
 const FixedContainer = styled(
   posed.div({
     enter: { opacity: 1, delayChildren: 300 },
-    exit: { opacity: 0 }
+    exit: { opacity: 0, afterChildren: true }
   })
 )`
   position: fixed;
