@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import {
-  styled,
-  typography,
-  color,
-  background,
-  padding,
-  marginTop,
-  marginBottom
-} from 'styles/cssFor'
+import { styled, color, marginTop } from 'styles/cssFor'
 import Input from 'components/Form/Input'
 import Textarea from 'components/Form/Textarea'
 import Button from 'components/Button'
@@ -64,7 +56,7 @@ class ContactForm extends Component {
               onChange={e => this.setState({ email: e.target.value })}
               value={email}
               name="email"
-              placeholder="Email to get back to you"
+              placeholder="Contact info..."
             />
           </FormGroup>
           <FormGroup>
@@ -73,7 +65,7 @@ class ContactForm extends Component {
               onChange={e => this.setState({ message: e.target.value })}
               value={message}
               name="message"
-              placeholder="Type some things..."
+              placeholder="Message..."
             />
           </FormGroup>
           <FormGroup buttons>

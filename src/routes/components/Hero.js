@@ -4,14 +4,13 @@ import {
   color,
   background,
   fontFamily,
-  typography,
-  marginTop,
-  marginBottom
+  typography
 } from 'styles/cssFor'
 import SimpleContainer from 'components/SimpleContainer'
 import PaddedBox from 'components/PaddedBox'
 
 const HeroContainer = styled(SimpleContainer)`
+  height: 60vh;
   ${color('white')};
   ${background('black')};
 `
@@ -29,13 +28,10 @@ const HeroCallout = styled(PaddedBox)`
 const Hero = () => (
   <HeroContainer>
     <HeroCallout>
-      Your high velocity <strong>product team</strong>.
-      <br />
-      We move fast, break things.
+      We are a portland-based boutique software firm specializing in quality
+      feature development.
     </HeroCallout>
   </HeroContainer>
 )
 
 export default Hero
-
-// Move fast and break things.

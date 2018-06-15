@@ -1,6 +1,4 @@
 import styled, { css } from 'react-emotion'
-import { Link } from 'react-router-dom'
-import withProps from 'recompose/withProps'
 import {
   paddingTop,
   paddingBottom,

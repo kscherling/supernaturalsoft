@@ -1,4 +1,4 @@
-import styled, { css } from 'react-emotion'
+import { css } from 'react-emotion'
 import LabelContainer from 'components/Form/_shared/LabelContainer'
 import Label from 'components/Form/_shared/Label'
 import { color } from 'styles/cssFor'
