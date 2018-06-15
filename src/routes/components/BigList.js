@@ -1,11 +1,5 @@
-import React, { Fragment } from 'react'
-import {
-  styled,
-  color,
-  marginBottom,
-  typography,
-  lineHeight
-} from 'styles/cssFor'
+import React from 'react'
+import { styled, typography } from 'styles/cssFor'
 import ContentGroup from 'components/ContentGroup'
 
 const ListItem = styled.div`

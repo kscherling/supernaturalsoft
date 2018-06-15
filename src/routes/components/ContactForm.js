@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import {
-  styled,
-  typography,
-  color,
-  background,
-  padding,
-  marginTop,
-  marginBottom
-} from 'styles/cssFor'
+import { styled, color, marginTop } from 'styles/cssFor'
 import Input from 'components/Form/Input'
 import Textarea from 'components/Form/Textarea'
 import Button from 'components/Button'

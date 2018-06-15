@@ -1,18 +1,7 @@
 import React from 'react'
 import SimpleContainer from 'components/SimpleContainer'
-import PaddedBox from 'components/PaddedBox'
 import ContactForm from './ContactForm'
-import {
-  styled,
-  typography,
-  color,
-  background,
-  margin,
-  marginTop,
-  marginBottom,
-  padding,
-  mediaDn
-} from 'styles/cssFor'
+import { styled, marginTop, marginBottom, mediaDn } from 'styles/cssFor'
 import Overlay from 'components/Overlay'
 import HandWave from 'components/HandWave'
 

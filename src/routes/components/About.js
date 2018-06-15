@@ -1,12 +1,4 @@
-import React, { Fragment } from 'react'
-import {
-  styled,
-  color,
-  marginBottom,
-  typography,
-  lineHeight
-} from 'styles/cssFor'
-import { withTheme, spacer } from 'styles/getters'
+import React from 'react'
 import SimpleContainer from 'components/SimpleContainer'
 import ContentGroup from 'components/ContentGroup'
 import PaddedBox from 'components/PaddedBox'

@@ -1,4 +1,4 @@
-import styled, { css } from 'react-emotion'
+import styled from 'react-emotion'
 import { transitionTiming } from './styles'
 import { color } from 'styles/cssFor'
 import { color as getColor } from 'styles/getters'

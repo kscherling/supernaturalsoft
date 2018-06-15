@@ -4,9 +4,7 @@ import {
   color,
   background,
   fontFamily,
-  typography,
-  marginTop,
-  marginBottom
+  typography
 } from 'styles/cssFor'
 import SimpleContainer from 'components/SimpleContainer'
 import PaddedBox from 'components/PaddedBox'
