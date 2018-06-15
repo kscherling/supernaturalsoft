@@ -1,7 +1,6 @@
-import React, { Component, Fragment, createRef } from 'react'
-import styled from 'react-emotion'
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
-import posed, { PoseGroup } from 'react-pose'
+import { PoseGroup } from 'react-pose'
 import Overlay from './Overlay'
 import Portal from './Portal'
 import Modal from './Modal'
@@ -77,6 +76,7 @@ class ModalIndex extends Component {
     switch (e.keyCode) {
       case ESC:
         this.toggle()
+        break
       default:
       // do nothing
     }

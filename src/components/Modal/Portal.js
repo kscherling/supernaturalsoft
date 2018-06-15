@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import { Component } from 'react'
 import { createPortal } from 'react-dom'
 
 class Portal extends Component {

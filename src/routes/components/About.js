@@ -2,8 +2,6 @@ import React from 'react'
 import SimpleContainer from 'components/SimpleContainer'
 import ContentGroup from 'components/ContentGroup'
 import PaddedBox from 'components/PaddedBox'
-import Button from 'components/Button'
-import BigList from 'routes/components/BigList'
 import SayHello from './SayHello'
 
 const DoBest = [

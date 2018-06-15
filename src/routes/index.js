@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react'
+import React, { Fragment } from 'react'
 import Hero from 'routes/components/Hero'
 import Competencies from 'routes/components/Competencies'
 import Layout from 'routes/components/Layout'
