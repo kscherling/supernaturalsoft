@@ -10,7 +10,7 @@ const FixedContainer = styled(
     exit: { opacity: 0, afterChildren: true }
   })
 )`
-  position: fixed;
+  position: fixed !important; // overide animated absolute
   top: 0;
   bottom: 0;
   left: 0;
