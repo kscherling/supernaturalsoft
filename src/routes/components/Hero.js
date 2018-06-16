@@ -10,6 +10,7 @@ import {
   paddingRight,
   paddingLeft
 } from 'styles/cssFor'
+import { breakpoint } from 'styles/getters'
 import SimpleContainer from 'components/SimpleContainer'
 import PaddedBox from 'components/PaddedBox'
 import Diagonal from 'routes/components/Diagonal'
@@ -38,8 +39,8 @@ const GradientOverlay = styled.div`
   right: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 0, 0, 0.99) 100%
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.95) 100%
   );
   z-index: 1;
 `
@@ -56,7 +57,7 @@ const HeroCallout = styled.div`
   ${marginBottom('md')};
 `
 
-const Highlight = styled.strong`
+const Highlight = styled.span`
   display: inline-block;
   ${paddingLeft('md')};
   ${paddingRight('md')};
@@ -66,6 +67,7 @@ const Highlight = styled.strong`
 const HeroSubhead = styled.div`
   ${typography('titleLg')};
   ${color('mdGrey')};
+  max-width: ${breakpoint('md')};
 `
 
 const StyledDiagonal = styled(Diagonal)`
