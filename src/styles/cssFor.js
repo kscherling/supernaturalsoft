@@ -4,13 +4,15 @@ import {
   fontFamily as getFontFamily,
   fontSize as getFontSize,
   spacer as getSpacer,
-  lineHeight as getLineHeight
+  lineHeight as getLineHeight,
+  zIndex as getZIndex
 } from 'styles/getters'
 import { curry } from 'utils/fp'
 import mediaFor from 'styles/helpers/mediaFor'
 import cssFor from 'styles/helpers/cssFor'
 
 export const background = cssFor('background', getColor)
+export const zIndex = cssFor('z-index', getZIndex)
 
 export const color = cssFor('color', getColor)
 export const fontFamily = cssFor('font-family', getFontFamily)

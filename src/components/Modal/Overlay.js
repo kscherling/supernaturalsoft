@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
-import { color, padding } from 'styles/cssFor'
+import { color, padding, zIndex } from 'styles/cssFor'
 import { spacer } from 'styles/getters'
 import posed from 'react-pose'
 
@@ -16,7 +16,7 @@ const FixedContainer = styled(
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.99);
-  z-index: 1000;
+  ${zIndex('overlay')};
   opacity: 0;
 `
 
@@ -26,7 +26,6 @@ const Close = styled.div`
   right: ${spacer('md')};
   ${color('mdGrey')};
   ${padding('md')};
-  z-index: 1020;
 
   &:hover {
     ${color('dkGrey')};

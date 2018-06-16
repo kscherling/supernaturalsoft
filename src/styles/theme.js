@@ -43,6 +43,14 @@ const color = {
   black: '#000000'
 }
 
+const zIndex = {
+  hero: 1,
+  content: 10,
+  navbar: 200,
+  overlay: 1000,
+  modal: 1010
+}
+
 //prettier-ignore
 const breakpoint = {
   sm: '576px',
@@ -57,5 +65,6 @@ export default {
   fontSize,
   lineHeight,
   spacer,
-  breakpoint
+  breakpoint,
+  zIndex
 }

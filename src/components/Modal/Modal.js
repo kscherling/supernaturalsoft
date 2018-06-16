@@ -1,5 +1,5 @@
-import styled from 'react-emotion'
 import posed from 'react-pose'
+import { zIndex, styled } from 'styles/cssFor'
 
 const Modal = styled(
   posed.div({
@@ -12,7 +12,7 @@ const Modal = styled(
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1010;
+  ${zIndex('modal')};
 `
 
 export default Modal

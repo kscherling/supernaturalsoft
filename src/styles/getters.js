@@ -9,6 +9,7 @@ export const fontSize = getWithProp('fontSize')
 export const spacer = getWithProp('spacer')
 export const lineHeight = getWithProp('lineHeight')
 export const breakpoint = getWithProp('breakpoint')
+export const zIndex = getWithProp('zIndex')
 
 // Exports
 

@@ -2,11 +2,15 @@ import React from 'react'
 import Logo from 'components/Logo'
 import { Link } from 'react-router-dom'
 import SimpleContainer from 'components/SimpleContainer'
-import { styled, color } from 'styles/getters'
+import { zIndex, styled } from 'styles/cssFor'
 
 const NavbarBackground = styled(SimpleContainer)`
-  background: ${color('black')};
   height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  ${zIndex('navbar')};
 `
 
 const NavbarLogo = styled(Link)``
