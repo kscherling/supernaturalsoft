@@ -7,6 +7,7 @@ const spacer = {
   xs: '4px',
   sm: '7px',
   md: '14px',
+  lg: '20px',
   xl: '28px',
   xxl: '42px',
   xxxl: '70px'
@@ -48,7 +49,8 @@ const zIndex = {
   content: 10,
   navbar: 200,
   overlay: 1000,
-  modal: 1010
+  modal: 1010,
+  closeModal: 1012
 }
 
 //prettier-ignore

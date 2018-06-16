@@ -26,6 +26,8 @@ const Close = styled.div`
   right: ${spacer('md')};
   ${color('mdGrey')};
   ${padding('md')};
+  ${zIndex('closeModal')};
+  pointer: manipulation;
 
   &:hover {
     ${color('dkGrey')};

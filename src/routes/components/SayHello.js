@@ -35,7 +35,7 @@ const Icon = styled(
 
 const Contact = () => (
   <Modal
-    renderTrigger={({ toggle }) => <Button onClick={toggle}>Sey hello</Button>}
+    renderTrigger={({ toggle }) => <Button onClick={toggle}>Hire us</Button>}
     renderModal={({ toggle }) => (
       <Container justifyContent="center">
         <ContactContainer>

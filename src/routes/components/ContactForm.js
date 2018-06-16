@@ -70,7 +70,7 @@ class ContactForm extends Component {
           </FormGroup>
           <FormGroup buttons>
             <SubmitButton type="submit" disabled={!(email && message)}>
-              Say hello
+              Send
             </SubmitButton>
           </FormGroup>
         </form>

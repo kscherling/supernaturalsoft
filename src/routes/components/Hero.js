@@ -80,6 +80,7 @@ const Title = styled.div`
 const Subtitle = styled.div`
   ${color('mdGrey')};
   ${typography('titleLg')};
+  ${marginBottom('xl')};
 
   ${mediaDn('md')} {
     ${typography('titleSm')};
@@ -117,11 +118,10 @@ const Hero = () => (
           <Subtitle>
             Adjunct is a Portland-based boutique software firm specializing in
             quality feature development. Our team was born out of a
-            fully-fledged product group that worked well together.
-            <br />
-            <br />
-            <SayHello />
+            fully-fledged product group that worked fantastically well together.
+            We think you'll agree.
           </Subtitle>
+          <SayHello />
         </PaddedBox>
       </SimpleContainer>
     </Bottom>
