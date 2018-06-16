@@ -23,8 +23,8 @@ const ContactContainer = styled.div`
 
 const Icon = styled(
   posed.div({
-    enter: { y: 0, opacity: 1, delay: 150 },
-    exit: { y: -100, opacity: 0 }
+    enter: { y: 0, opacity: 1, delay: 500 },
+    exit: { y: 50, opacity: 0 }
   })
 )`
   display: flex;
