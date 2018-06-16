@@ -17,8 +17,9 @@ const About = ({ toggleContactForm }) => (
   <SimpleContainer>
     <PaddedBox>
       <ContentGroup>
-        Our team was born out of a fully-fledged product group that worked well
-        together.
+        Adjunct is a Portland-based boutique software firm specializing in
+        quality feature development. Our team was born out of a fully-fledged
+        product group that worked well together.
         <br />
         <br />
         <SayHello />
