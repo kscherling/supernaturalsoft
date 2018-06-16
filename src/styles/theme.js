@@ -19,7 +19,8 @@ const fontSize = {
   titleSm: '18px',
   titleMd: '22px',
   titleLg: '28px',
-  titleXl: '36px'
+  titleXl: '36px',
+  titleXxl: '48px'
 }
 
 const lineHeight = {
@@ -29,7 +30,8 @@ const lineHeight = {
   titleSm: 1.5,
   titleMd: 1.5,
   titleLg: 1.5,
-  titleXl: 1.5
+  titleXl: 1.5,
+  titleXxl: 1.5
 }
 
 const color = {

@@ -2,6 +2,7 @@ import React from 'react'
 import {
   styled,
   color,
+  marginBottom,
   background,
   fontFamily,
   typography
@@ -13,24 +14,28 @@ const HeroContainer = styled(SimpleContainer)`
   height: 60vh;
   ${color('white')};
   ${background('black')};
+  ${fontFamily('serif')};
 `
 
-const HeroCallout = styled(PaddedBox)`
+const HeroCallout = styled.div`
+  ${typography('titleXxl')};
+  ${color('white')};
+  ${marginBottom('md')};
+`
+const HeroSubhead = styled.div`
   ${color('mdGrey')};
-  ${fontFamily('serif')};
-  ${typography('titleXl')};
-
-  strong {
-    ${color('white')};
-  }
+  ${typography('titleLg')};
 `
 
 const Hero = () => (
   <HeroContainer>
-    <HeroCallout>
-      We are a portland-based boutique software firm specializing in quality
-      feature development.
-    </HeroCallout>
+    <PaddedBox>
+      <HeroCallout>Your high velocity product team.</HeroCallout>
+      <HeroSubhead>
+        A Portland-based boutique software firm specializing in quality feature
+        development.
+      </HeroSubhead>
+    </PaddedBox>
   </HeroContainer>
 )
 
