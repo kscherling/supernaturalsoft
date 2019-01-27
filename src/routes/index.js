@@ -1,10 +1,10 @@
 import React from 'react'
 import Hero from 'routes/components/Hero'
-import Competencies from 'routes/components/Competencies'
+import Callouts from 'routes/components/Callouts'
 import Layout from 'routes/components/Layout'
 
 const IndexRoute = () => (
-  <Layout renderHero={() => <Hero />} renderContent={() => <Competencies />} />
+  <Layout renderHero={() => <Hero />} renderContent={() => <Callouts />} />
 )
 
 export default IndexRoute
