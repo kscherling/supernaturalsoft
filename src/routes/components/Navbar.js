@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from 'components/Logo'
+import logoWhite from './logo.svg'
 import { Link } from 'react-router-dom'
 import SimpleContainer from 'components/SimpleContainer'
 import { zIndex, styled } from 'styles/cssFor'
@@ -18,7 +18,7 @@ const NavbarLogo = styled(Link)``
 const Navbar = () => (
   <NavbarBackground>
     <NavbarLogo to="/">
-      <Logo fill="white" />
+      <img src={logoWhite} />
     </NavbarLogo>
   </NavbarBackground>
 )
