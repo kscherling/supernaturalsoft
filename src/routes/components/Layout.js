@@ -14,13 +14,13 @@ const HeroContainer = styled.div`
 `
 const ContentContainer = styled.div`
   position: relative;
-  ${background('offWhite')};
+  ${background('white')};
   ${zIndex('content')};
 `
 
 const Layout = ({ renderHero, renderContent }) => (
   <LayoutContainer>
-    <HeroContainer>{renderHero()}</HeroContainer>
+    {renderHero()}
     <ContentContainer>
       {renderContent()}
       <Footer />
