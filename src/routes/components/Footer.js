@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from 'components/Logo'
 import SimpleContainer from 'components/SimpleContainer'
-import { styled, color, marginRight } from 'styles/cssFor'
+import { styled, color, typography } from 'styles/cssFor'
 
 const FooterBackground = styled(SimpleContainer)`
   background: ${color('white')};
@@ -9,13 +9,11 @@ const FooterBackground = styled(SimpleContainer)`
 `
 
 const Copyright = styled.div`
+  ${typography('bodySm')};
   ${color('mdGrey')};
 `
 
-const FooterLogo = styled(Logo)`
-  margin-top: 2px;
-  ${marginRight('sm')};
-`
+const FooterLogo = styled(Logo)``
 
 const PullRight = styled.div`
   display: flex;
@@ -24,9 +22,9 @@ const PullRight = styled.div`
 
 const Navbar = () => (
   <FooterBackground>
-    <Copyright>&copy; 2018</Copyright>
+    <FooterLogo height="18px" fill="#ba141a" />
     <PullRight>
-      <FooterLogo height="18px" fill="red" />
+      <Copyright>&copy; 2018 Supernatural Software</Copyright>
     </PullRight>
   </FooterBackground>
 )

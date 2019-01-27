@@ -5,6 +5,7 @@ import { mediaUp, mediaDn } from 'styles/cssFor'
 
 const HeroContainer = styled.div`
   height: 60vh;
+  text-align: center;
   display: flex;
   background: url('/assets/supernatural_clouds.jpg') center center no-repeat;
   background-size: cover;

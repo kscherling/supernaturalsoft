@@ -42,8 +42,8 @@ const fontWeight = {
   titleSm: 900,
   titleMd: 900,
   titleLg: 900,
-  titleXl: 400,
-  titleXxl: 400
+  titleXl: 900,
+  titleXxl: 900
 }
 
 const color = {
