@@ -41,7 +41,10 @@ const color = {
   ltGrey: '#cccccc',
   mdGrey: '#999999',
   dkGrey: '#333333',
-  black: '#000000'
+  black: '#000000',
+  redLt: '#e62129',
+  red: '#d82128',
+  redDk: '#ba141a'
 }
 
 const zIndex = {
