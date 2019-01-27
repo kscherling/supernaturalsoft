@@ -19,14 +19,14 @@ const Title = styled.div`
   z-index: 4;
 
   ${mediaDn('md')} {
-    ${typography('titleLg')};
+    ${typography('titleXl')};
   }
 `
 
 const Hero = () => (
   <HeroContainer>
     <Fill>
-      <Title>Experienced software product management help.</Title>
+      <Title>Experienced software product management help</Title>
     </Fill>
   </HeroContainer>
 )

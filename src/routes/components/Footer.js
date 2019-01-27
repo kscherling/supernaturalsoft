@@ -26,7 +26,7 @@ const Navbar = () => (
   <FooterBackground>
     <Copyright>&copy; 2018</Copyright>
     <PullRight>
-      <FooterLogo height="18px" fill="black" />
+      <FooterLogo height="18px" fill="red" />
     </PullRight>
   </FooterBackground>
 )
