@@ -5,7 +5,7 @@ import SimpleContainer from 'components/SimpleContainer'
 import { zIndex, styled } from 'styles/cssFor'
 
 const NavbarBackground = styled(SimpleContainer)`
-  height: 100px;
+  height: 140px;
   position: absolute;
   top: 0;
   left: 0;

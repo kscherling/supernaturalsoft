@@ -3,7 +3,7 @@ import theme from 'styles/theme'
 import { color } from 'styles/getters'
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
   html {
     box-sizing: border-box;
@@ -16,6 +16,7 @@ injectGlobal`
 
   body {
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: ${color('dkGrey', { theme })};
   }
 

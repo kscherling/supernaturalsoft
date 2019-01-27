@@ -35,6 +35,17 @@ const lineHeight = {
   titleXxl: 1.5
 }
 
+const fontWeight = {
+  bodySm: 400,
+  bodyMd: 400,
+  bodyLg: 400,
+  titleSm: 900,
+  titleMd: 900,
+  titleLg: 900,
+  titleXl: 400,
+  titleXxl: 400
+}
+
 const color = {
   white: '#ffffff',
   offWhite: '#f2f2f2',
@@ -71,5 +82,6 @@ export default {
   lineHeight,
   spacer,
   breakpoint,
-  zIndex
+  zIndex,
+  fontWeight
 }

@@ -3,6 +3,7 @@ import {
   color as getColor,
   fontFamily as getFontFamily,
   fontSize as getFontSize,
+  fontWeight as getFontWeight,
   spacer as getSpacer,
   lineHeight as getLineHeight,
   zIndex as getZIndex
@@ -17,11 +18,12 @@ export const zIndex = cssFor('z-index', getZIndex)
 export const color = cssFor('color', getColor)
 export const fontFamily = cssFor('font-family', getFontFamily)
 export const fontSize = cssFor('font-size', getFontSize)
+export const fontWeight = cssFor('font-weight', getFontWeight)
 export const lineHeight = cssFor('line-height', getLineHeight)
 export const typography = curry(
   (key, props) => css`
     ${fontSize(key, props)};
-    ${lineHeight(key, props)};
+    ${fontWeight(key, props)} ${lineHeight(key, props)};
   `
 )
 

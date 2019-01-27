@@ -6,7 +6,8 @@ import { mediaUp, mediaDn } from 'styles/cssFor'
 const HeroContainer = styled.div`
   height: 60vh;
   display: flex;
-  ${background('red')};
+  background: url('/assets/supernatural_clouds.jpg') center center no-repeat;
+  background-size: cover;
 `
 
 const Fill = styled(SimpleContainer)`
