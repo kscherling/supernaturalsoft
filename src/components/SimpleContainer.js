@@ -26,10 +26,9 @@ const Flow = styled.div`
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   ${mediaDn('sm')} {
-    ${paddingLeft('xl')};
-    ${paddingRight('xl')};
     justify-content: unset;
   }
 `
@@ -62,7 +61,9 @@ export const Respond = styled.div`
   }
 
   ${mediaDn('sm')} {
-    width: 100%;
+    width: auto;
+    ${paddingLeft('xl')};
+    ${paddingRight('xl')};
   }
 
   ${ifCollapse};

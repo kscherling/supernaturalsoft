@@ -3,16 +3,7 @@ import theme from 'styles/theme'
 import { color } from 'styles/getters'
 
 injectGlobal`
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
-
-  html {
-    box-sizing: border-box;
-    font-size: 16px;
-    -moz-osx-font-smoothing: Greyscale;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  *, *:before, *:after { box-sizing: inherit; }
+  @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
   body {
     font-family: 'Lato', sans-serif;

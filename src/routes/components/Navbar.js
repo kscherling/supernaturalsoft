@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from 'components/Logo'
 import { Link } from 'react-router-dom'
 import SimpleContainer from 'components/SimpleContainer'
-import { zIndex, styled } from 'styles/cssFor'
+import { zIndex, styled, mediaDn } from 'styles/cssFor'
 
 const NavbarBackground = styled(SimpleContainer)`
   height: 140px;
@@ -13,7 +13,13 @@ const NavbarBackground = styled(SimpleContainer)`
   ${zIndex('navbar')};
 `
 
-const NavbarLogo = styled(Link)``
+const NavbarLogo = styled(Link)`
+  ${mediaDn('sm')} {
+    svg {
+      height: 26px !important;
+    }
+  }
+`
 
 const Navbar = () => (
   <NavbarBackground>
