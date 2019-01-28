@@ -60,6 +60,10 @@ const Links = styled.div`
 
   ${mediaDn('sm')} {
     justify-content: flex-start;
+
+    ${Copyright} {
+      margin-left: 0;
+    }
   }
 `
 // <Link to="/privacy">Privacy</Link>
