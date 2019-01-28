@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Hero from 'routes/components/Hero'
 import Callouts from 'routes/components/Callouts'
-import Layout from 'routes/components/Layout'
+import Footer from 'routes/components/Footer'
 
 const IndexRoute = () => (
-  <Layout renderHero={() => <Hero />} renderContent={() => <Callouts />} />
+  <Fragment>
+    <Hero />
+    <Callouts />
+    <Footer />
+  </Fragment>
 )
 
 export default IndexRoute

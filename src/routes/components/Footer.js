@@ -16,10 +16,10 @@ import {
 
 const TwoColumn = styled(SimpleContainer)`
   ${Respond} {
-    height: 80px;
     grid-auto-flow: row;
     grid-gap: ${spacer('xl')};
     ${paddingTop('xl')};
+    ${paddingBottom('xl')};
 
     ${mediaUp('xl')} {
       grid-template-columns: repeat(2, 1fr);
@@ -44,10 +44,9 @@ const TwoColumn = styled(SimpleContainer)`
 `
 
 const Copyright = styled.div``
-
 const FooterLogo = styled(Logo)``
-
-const Links = styled.div`
+const StyledLink = styled(Link)``
+const StyledLinks = styled.div`
   display: flex;
   justify-content: flex-end;
 
@@ -58,21 +57,35 @@ const Links = styled.div`
     margin-left: ${spacer('md')};
   }
 
+  ${StyledLink} {
+    margin-left: ${spacer('md')};
+  }
+
   ${mediaDn('sm')} {
     justify-content: flex-start;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-gap: ${spacer('md')};
 
     ${Copyright} {
       margin-left: 0;
     }
+
+    ${StyledLink} {
+      margin-left: 0;
+    }
   }
 `
-// <Link to="/privacy">Privacy</Link>
+
 const Navbar = () => (
   <TwoColumn>
     <FooterLogo height="18px" fill="#ba141a" />
-    <Links>
+    <StyledLinks>
+      <StyledLink to="/privacy">Privacy</StyledLink>
+      <StyledLink to="/appgelica">Appgelica by Supernatural</StyledLink>
       <Copyright>&copy; 2018 Supernatural Software</Copyright>
-    </Links>
+    </StyledLinks>
   </TwoColumn>
 )
 
