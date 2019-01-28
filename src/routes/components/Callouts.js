@@ -51,7 +51,7 @@ const Content = styled.div`
   ${typography('bodyLg')};
 `
 
-const Competencies = ({ theme }) => (
+const Competencies = () => (
   <FourColumn>
     <Column>
       <SubTitle>Product Ownership</SubTitle>
@@ -92,4 +92,4 @@ const Competencies = ({ theme }) => (
   </FourColumn>
 )
 
-export default withTheme(Competencies)
+export default Competencies
