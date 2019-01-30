@@ -84,7 +84,9 @@ const Navbar = () => (
     <StyledLinks>
       <StyledLink to="/privacy">Privacy</StyledLink>
       <StyledLink to="/appgelica">Appgelica by Supernatural</StyledLink>
-      <Copyright>&copy; 2018 Supernatural Software</Copyright>
+      <Copyright>
+        &copy; {new Date().getFullYear()} Supernatural Software
+      </Copyright>
     </StyledLinks>
   </TwoColumn>
 )
