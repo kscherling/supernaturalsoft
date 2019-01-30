@@ -25,10 +25,25 @@ const Title = styled.div`
   }
 `
 
+const StyledLink = styled.a`
+  text-decoration: underline;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 1;
+  }
+`
+
 const Hero = () => (
   <HeroContainer>
     <Fill>
-      <Title>Experienced software product management help</Title>
+      <Title>
+        Experienced software <br />product management help is{' '}
+        <StyledLink href="mailto:someone@example.com?Subject=Yo">
+          here
+        </StyledLink>
+      </Title>
     </Fill>
   </HeroContainer>
 )
