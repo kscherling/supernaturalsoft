@@ -39,8 +39,7 @@ const Hero = () => (
   <HeroContainer>
     <Fill>
       <Title>
-        Experienced software <br />product management help is{' '}
-        <StyledLink href="mailto:hello@supernaturalsoft.com.">here</StyledLink>
+        Experienced software <br />product management help.
       </Title>
     </Fill>
   </HeroContainer>

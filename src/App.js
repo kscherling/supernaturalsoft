@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Navbar from 'routes/components/Navbar'
 import IndexRoute from 'routes/index'
 import styled from 'react-emotion'
+import PrivacyRoute from './routes/privacy'
 
 const Test = styled.div`
   height: 100vh;
@@ -11,8 +11,8 @@ const Test = styled.div`
 
 const App = () => (
   <Fragment>
-    <Navbar />
     <Switch>
+      <Route path="/privacy" component={PrivacyRoute} />
       <Route path="/" component={IndexRoute} />
     </Switch>
   </Fragment>
