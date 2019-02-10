@@ -56,7 +56,7 @@ const Competencies = () => (
     <Column>
       <SubTitle>Product Ownership</SubTitle>
       <Content>
-        Set a template for how someone in your org should be taking
+        Set a fat template for how someone in your org should be taking
         responsibility for a product line, as well as the honest brokering of
         authority vs project guidance by the executive team. Have supernatural
         stand in as a product owner as a model, train up, then hand over the
