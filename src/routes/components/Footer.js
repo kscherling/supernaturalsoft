@@ -54,11 +54,10 @@ const StyledLinks = styled.div`
   ${typography('bodySm')};
 
   ${Copyright} {
-    margin-left: ${spacer('md')};
   }
 
-  ${StyledLink} {
-    margin-left: ${spacer('md')};
+  ${StyledLink}, a {
+    margin-right: ${spacer('md')};
   }
 
   ${mediaDn('sm')} {
@@ -82,8 +81,11 @@ const Navbar = () => (
   <TwoColumn>
     <FooterLogo height="18px" fill="#ba141a" />
     <StyledLinks>
+      <a href="mailto:hello@supernaturalsoft.com">Contact</a>
       <StyledLink to="/privacy">Privacy</StyledLink>
-      <StyledLink to="/appgelica">Appgelica by Supernatural</StyledLink>
+      <a href="https://play.google.com/store/apps/details?id=com.supernaturalsoft.appgelica&hl=en_US">
+        Appgelica by Supernatural
+      </a>
       <Copyright>
         &copy; {new Date().getFullYear()} Supernatural Software
       </Copyright>
