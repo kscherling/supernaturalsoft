@@ -56,9 +56,9 @@ const Competencies = () => (
     <Column>
       <SubTitle>Product Ownership</SubTitle>
       <Content>
-        Set a fat template for how someone in your org should be taking
-        responsibility for a product line, as well as the honest brokering of
-        authority vs project guidance by the executive team. Have supernatural
+        Establish a new norm for how your org takes
+        responsibility for product lines.  Revisit whether there is honest brokering of
+        authority versus project guidance by the executive team. Have Supernatural
         stand in as a product owner as a model, train up, then hand over the
         reins.
       </Content>
@@ -66,8 +66,8 @@ const Competencies = () => (
     <Column>
       <SubTitle>Specs + Tickets</SubTitle>
       <Content>
-        Hand over the writing of a single spec, with ticket breakouts included.
-        Tickets can also include a preliminary engineering estimate and testing
+        Hand over to us the writing of a single spec with ticket breakouts included.
+        Tickets can include a preliminary engineering estimate and testing
         requirements if desired. This has at times been ideal for a spec for a
         prototype whereby funding was limited and work definition critical.
       </Content>
@@ -76,17 +76,17 @@ const Competencies = () => (
       <SubTitle>Documentation</SubTitle>
       <Content>
         Fallen behind on JIRA, Confluence, Trello techniques? Lightweight
-        options to get caught up and new skills on how to make documenting
-        actually widely appreciated as opposed to a pointless chore.
+        options to get caught up and new skills to make documenting
+        a useful activity as opposed to a pointless chore.
       </Content>
     </Column>
     <Column>
       <SubTitle>Software Development</SubTitle>
       <Content>
-        In certain situations, supernatural will contract out or apply
-        development services to very well defined mid-sized projects. We provide
+        In certain situations, Supernatural will contract out or apply
+        development services to very well-defined projects. We provide
         product consulting services, but in situations where a build requires a
-        high-degree of PM/eng coordination, we can supply the right engineer.
+        high-degree of PM/eng coordination, we can supply the right engineers.
       </Content>
     </Column>
   </FourColumn>
